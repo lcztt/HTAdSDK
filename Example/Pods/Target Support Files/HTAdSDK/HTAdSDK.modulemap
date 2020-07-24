@@ -1,0 +1,6 @@
+framework module HTAdSDK {
+  umbrella header "HTAdSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
