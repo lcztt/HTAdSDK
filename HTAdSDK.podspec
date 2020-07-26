@@ -27,11 +27,11 @@ Pod::Spec.new do |s|
   s.source_files = 'HTAdSDK/Classes/**/*'
   # s.public_header_files = 'Pod/Classes/**/*.h'
   
-  s.resources = 'BaiduMobAdSDK/baidumobadsdk.bundle'
+  s.resources = 'HTAdSDK/Classes/BaiduMobAdSDK/baidumobadsdk.bundle'
   
-  s.frameworks = ['UIKit', 'Foundation', 'StoreKit', 'SafariServices', 'MessageUI', 'CoreMedia', 'CoreMotion', 'SystemConfiguration', 'CoreLocation', 'CoreTelephony', 'AVFoundation', 'AdSupport']
+  s.frameworks = 'UIKit', 'Foundation', 'StoreKit', 'SafariServices', 'MessageUI', 'CoreMedia', 'CoreMotion', 'SystemConfiguration', 'CoreLocation', 'CoreTelephony', 'AVFoundation', 'AdSupport'
   # 百度 sdk
-  s.vendored_frameworks = ['BaiduMobAdSDK/BaiduMobAdSDK.framework']
+  s.vendored_frameworks = ['HTAdSDK/Classes/BaiduMobAdSDK/BaiduMobAdSDK.framework']
   s.libraries = ['c++']
   
   # 编译出静态库
