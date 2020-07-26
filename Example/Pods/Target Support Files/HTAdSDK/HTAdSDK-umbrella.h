@@ -40,6 +40,7 @@
 #import "BDAdSDKManager.h"
 #import "HTBUAdSDKManager.h"
 #import "HTGDTAdSDKManager.h"
+#import "HTUMManager.h"
 
 FOUNDATION_EXPORT double HTAdSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char HTAdSDKVersionString[];

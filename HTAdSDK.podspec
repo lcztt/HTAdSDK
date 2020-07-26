@@ -46,6 +46,7 @@ Pod::Spec.new do |s|
   s.dependency 'GDTMobSDK'
   # 穿山甲
   s.dependency 'Bytedance-UnionAD'
-  
+  # 友盟
+  s.dependency 'UMCCommon'
   
 end
