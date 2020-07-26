@@ -2,7 +2,6 @@
   "name": "HTAdSDK",
   "version": "0.1.0",
   "summary": "A short description of HTAdSDK.",
-  "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/lcztt/HTAdSDK",
   "license": {
     "type": "MIT",
@@ -16,7 +15,41 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
-  "source_files": "HTAdSDK/Classes/**/*"
+  "description": "TODO: Add long description of the pod here.",
+  "source_files": "HTAdSDK/Classes/**/*",
+  "resources": "BaiduMobAdSDK/baidumobadsdk.bundle",
+  "frameworks": [
+    "UIKit",
+    "Foundation",
+    "StoreKit",
+    "SafariServices",
+    "MessageUI",
+    "CoreMedia",
+    "CoreMotion",
+    "SystemConfiguration",
+    "CoreLocation",
+    "CoreTelephony",
+    "AVFoundation",
+    "AdSupport"
+  ],
+  "vendored_frameworks": [
+    "BaiduMobAdSDK/BaiduMobAdSDK.framework"
+  ],
+  "libraries": [
+    "c++"
+  ],
+  "static_framework": true,
+  "xcconfig": {
+    "OTHER_LDFLAGS": "-ObjC"
+  },
+  "dependencies": {
+    "GDTMobSDK": [
+
+    ],
+    "Bytedance-UnionAD": [
+
+    ]
+  }
 }
