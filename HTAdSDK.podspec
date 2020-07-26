@@ -23,11 +23,10 @@ Pod::Spec.new do |s|
   # s.resource_bundles = {
   #   'HTAdSDK' => ['HTAdSDK/Assets/*.png']
   # }
+  s.resource = 'HTAdSDK/Classes/**/*.bundle'
   
   s.source_files = 'HTAdSDK/Classes/**/*'
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  
-  s.resources = 'HTAdSDK/Classes/BaiduMobAdSDK/baidumobadsdk.bundle'
   
   s.frameworks = 'UIKit', 'Foundation', 'StoreKit', 'SafariServices', 'MessageUI', 'CoreMedia', 'CoreMotion', 'SystemConfiguration', 'CoreLocation', 'CoreTelephony', 'AVFoundation', 'AdSupport'
   # 百度 sdk

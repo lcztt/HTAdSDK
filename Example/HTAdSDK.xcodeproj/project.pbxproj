@@ -247,6 +247,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = lcztt;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 4U4W83LS97;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -494,6 +497,7 @@
 			baseConfigurationReference = 114E46EFD49002F6D9D5F412 /* Pods-HTAdSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4U4W83LS97;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HTAdSDK/HTAdSDK-Prefix.pch";
 				INFOPLIST_FILE = "HTAdSDK/HTAdSDK-Info.plist";
@@ -510,6 +514,7 @@
 			baseConfigurationReference = 2FFEFB91867D311BBEE71922 /* Pods-HTAdSDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4U4W83LS97;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HTAdSDK/HTAdSDK-Prefix.pch";
 				INFOPLIST_FILE = "HTAdSDK/HTAdSDK-Info.plist";
