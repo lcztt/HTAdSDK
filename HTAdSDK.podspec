@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   # }
   s.resource = 'HTAdSDK/Classes/**/*.bundle'
   
-  s.source_files = 'HTAdSDK/Classes/**/*'
+  s.source_files = 'HTAdSDK/Classes/**/*.{h, m}'
   # s.public_header_files = 'Pod/Classes/**/*.h'
   
   s.frameworks = 'UIKit', 'Foundation', 'StoreKit', 'SafariServices', 'MessageUI', 'CoreMedia', 'CoreMotion', 'SystemConfiguration', 'CoreLocation', 'CoreTelephony', 'AVFoundation', 'AdSupport'
