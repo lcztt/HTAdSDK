@@ -18,8 +18,8 @@
     "ios": "10.0"
   },
   "description": "TODO: Add long description of the pod here.",
-  "source_files": "HTAdSDK/Classes/**/*",
-  "resources": "BaiduMobAdSDK/baidumobadsdk.bundle",
+  "resources": "HTAdSDK/Classes/**/*.bundle",
+  "source_files": "HTAdSDK/Classes/**/*.{h, m}",
   "frameworks": [
     "UIKit",
     "Foundation",
@@ -35,7 +35,7 @@
     "AdSupport"
   ],
   "vendored_frameworks": [
-    "BaiduMobAdSDK/BaiduMobAdSDK.framework"
+    "HTAdSDK/Classes/BaiduMobAdSDK/BaiduMobAdSDK.framework"
   ],
   "libraries": [
     "c++"

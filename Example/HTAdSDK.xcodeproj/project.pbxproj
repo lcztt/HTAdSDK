@@ -328,10 +328,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HTAdSDK_Example/Pods-HTAdSDK_Example-resources.sh",
 				"${PODS_ROOT}/Bytedance-UnionAD/Bytedance-UnionAd/Frameworks/BUAdSDK.bundle",
+				"${PODS_ROOT}/../../HTAdSDK/Classes/BaiduMobAdSDK/baidumobadsdk.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BUAdSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/baidumobadsdk.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
