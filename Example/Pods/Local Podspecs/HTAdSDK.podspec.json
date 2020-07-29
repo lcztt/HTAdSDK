@@ -19,7 +19,7 @@
   },
   "description": "TODO: Add long description of the pod here.",
   "resources": "HTAdSDK/Classes/**/*.bundle",
-  "source_files": "HTAdSDK/Classes/**/*.{h, m}",
+  "source_files": "HTAdSDK/Classes/**/*.{h,m}",
   "frameworks": [
     "UIKit",
     "Foundation",
