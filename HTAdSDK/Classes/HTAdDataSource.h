@@ -1,15 +1,17 @@
 //
-//  HTGDTAdSDKManager.h
+//  HTAdDataSource.h
 //  HTAdSDK
 //
-//  Created by vitas on 2020/7/26.
+//  Created by vitas on 2020/7/31.
 //
 
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HTGDTAdSDKManager : NSObject
+
+
+@interface HTAdDataSource : NSObject
 
 @end
 

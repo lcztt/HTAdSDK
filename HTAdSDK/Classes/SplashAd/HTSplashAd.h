@@ -1,0 +1,29 @@
+//
+//  HTSplashAd.h
+//  AllPopMake-mobile
+//
+//  Created by vitas on 2020/7/4.
+//
+
+#import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface HTSplashAd : NSObject
+
+- (instancetype)initWithSlotID:(NSString *)slotID;
+
+- (void)loadAdData;
+
+- (void)showAdWithRootViewController:(UIViewController *)rootVC;
+
+@end
+
+@protocol HTSplashAdDelegate <NSObject>
+
+@optional
+
+
+@end
+
+NS_ASSUME_NONNULL_END
