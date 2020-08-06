@@ -11,7 +11,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HTSplashAd : NSObject
 
-- (instancetype)initWithSlotID:(NSString *)slotID;
+@property (nonatomic, copy) NSString *appId;
+@property (nonatomic, copy) NSString *csjSlotId;
+@property (nonatomic, copy) NSString *gdtSlotId;
+@property (nonatomic, copy) NSString *bdSlotId;
 
 - (void)loadAdData;
 

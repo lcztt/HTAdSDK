@@ -7,41 +7,94 @@
 
 #import "HTRewardVideoAd.h"
 #import <BUAdSDK/BUAdSDK.h>
+#import "GDTRewardVideoAd.h"
+#import <BaiduMobAdSDK/BaiduMobAdRewardVideo.h>
+#import <BaiduMobAdSDK/BaiduMobAdRewardVideoDelegate.h>
+#import "HTAdDefine.h"
 
-@interface HTRewardVideoAd () <BUNativeExpressRewardedVideoAdDelegate>
+@interface HTRewardVideoAd ()
+<BUNativeExpressRewardedVideoAdDelegate,
+GDTRewardedVideoAdDelegate,
+BaiduMobAdRewardVideoDelegate>
 
-@property (nonatomic,strong) BUNativeExpressRewardedVideoAd *rewardedVideoAd;
+@property (nonatomic, strong) BUNativeExpressRewardedVideoAd *csjVideoAd;
+@property (nonatomic, strong) GDTRewardVideoAd *gdtVideoAd;
+@property (nonatomic, strong) BaiduMobAdRewardVideo *bdVideoAd;
+
+// 记录当前队列中显示的广告索引
+@property (nonatomic, assign) NSInteger preShowIndex;
 
 @end
 
 
 @implementation HTRewardVideoAd
 
-- (instancetype)initWithSlotID:(NSString *)slotID
++ (void)shareInstance
+{
+    static dispatch_once_t onceToken;
+    static HTRewardVideoAd *_instance;
+    dispatch_once(&onceToken, ^{
+        _instance = [[HTRewardVideoAd alloc] init];
+    });
+}
+
+- (instancetype)init
 {
     self = [super init];
     if (self) {
-        BURewardedVideoModel *model= [[BURewardedVideoModel alloc] init];
-//        model.userId = SAFESTRING(@([APPUser shareInstance].uid));
-        
-        self.rewardedVideoAd = [[BUNativeExpressRewardedVideoAd alloc] initWithSlotID:slotID rewardedVideoModel:model];
-        self.rewardedVideoAd.delegate = self;
+        self.platformPriority = @[@(kVendorAdPlatformCSJ), @(kVendorAdPlatformGDT), @(kVendorAdPlatformBD)];
+        self.preShowIndex = 0;
     }
     return self;
 }
 
--  (void)loadAdData
+- (void)loadAd
 {
-    [self.rewardedVideoAd loadAdData];
+    if ([self.platformPriority containsObject:@(kVendorAdPlatformCSJ)]) {
+        if (!self.csjVideoAd.isAdValid) {
+            [self loadCSJAd];
+        }
+    }
+    
+    if ([self.platformPriority containsObject:@(kVendorAdPlatformGDT)]) {
+        if (!self.gdtVideoAd.isAdValid) {
+            [self loadGDTAd];
+        }
+    }
+    
+    if ([self.platformPriority containsObject:@(kVendorAdPlatformBD)]) {
+        if (![self.bdVideoAd isReady]) {
+            [self loadBDAd];
+        }
+    }
 }
 
 - (void)showAdWithRootViewController:(UIViewController *)rootVC
 {
-    BOOL success = [self.rewardedVideoAd showAdFromRootViewController:rootVC];
-    NSLog(@"success: %@", @(success));
+    if (self.platformPriority.count > self.preShowIndex) {
+        kVendorAdPlatform platform = [self.platformPriority[self.preShowIndex] integerValue];
+        if (platform == kVendorAdPlatformCSJ) {
+            [self.csjVideoAd showAdFromRootViewController:rootVC];
+        } else if (platform == kVendorAdPlatformGDT) {
+            [self.gdtVideoAd showAdFromRootViewController:rootVC];
+        } else if (platform == kVendorAdPlatformBD) {
+            [self.bdVideoAd showFromViewController:rootVC];
+        }
+    }
 }
 
-#pragma mark - BURewardedVideoAdDelegate -
+#pragma mark - 穿山甲 -
+
+- (void)loadCSJAd
+{
+    BURewardedVideoModel *model= [[BURewardedVideoModel alloc] init];
+    self.csjVideoAd = [[BUNativeExpressRewardedVideoAd alloc] initWithSlotID:self.csjSlotId rewardedVideoModel:model];
+    self.csjVideoAd.delegate = self;
+    [self.csjVideoAd loadAdData];
+}
+
+#pragma mark - BURewardedVideoAdDelegate
+
 /**
  This method is called when video ad material loaded successfully.
  */
@@ -120,7 +173,6 @@
         [self.delegate rewardedVideoAdWillVisible:self];
     }
 }
-
 
 /**
  This method is called when video ad slot has been shown.
@@ -235,4 +287,192 @@
     
 }
 
+#pragma mark - 广点通 -
+
+- (void)loadGDTAd
+{
+    self.gdtVideoAd = [[GDTRewardVideoAd alloc] initWithAppId:self.appId placementId:self.gdtSlotId];
+    self.gdtVideoAd.delegate = self;
+    [self.gdtVideoAd loadAd];
+}
+
+#pragma mark - GDTRewardedVideoAdDelegate
+/**
+ 广告数据加载成功回调
+
+ @param rewardedVideoAd GDTRewardVideoAd 实例
+ */
+- (void)gdt_rewardVideoAdDidLoad:(GDTRewardVideoAd *)rewardedVideoAd
+{
+    
+}
+
+/**
+ 视频数据下载成功回调，已经下载过的视频会直接回调
+
+ @param rewardedVideoAd GDTRewardVideoAd 实例
+ */
+- (void)gdt_rewardVideoAdVideoDidLoad:(GDTRewardVideoAd *)rewardedVideoAd
+{
+    
+}
+
+/**
+ 视频播放页即将展示回调
+
+ @param rewardedVideoAd GDTRewardVideoAd 实例
+ */
+- (void)gdt_rewardVideoAdWillVisible:(GDTRewardVideoAd *)rewardedVideoAd
+{
+    
+}
+
+/**
+ 视频广告曝光回调
+
+ @param rewardedVideoAd GDTRewardVideoAd 实例
+ */
+- (void)gdt_rewardVideoAdDidExposed:(GDTRewardVideoAd *)rewardedVideoAd
+{
+    
+}
+
+/**
+ 视频播放页关闭回调
+
+ @param rewardedVideoAd GDTRewardVideoAd 实例
+ */
+- (void)gdt_rewardVideoAdDidClose:(GDTRewardVideoAd *)rewardedVideoAd
+{
+    
+}
+
+/**
+ 视频广告信息点击回调
+
+ @param rewardedVideoAd GDTRewardVideoAd 实例
+ */
+- (void)gdt_rewardVideoAdDidClicked:(GDTRewardVideoAd *)rewardedVideoAd
+{
+    
+}
+
+/**
+ 视频广告各种错误信息回调
+
+ @param rewardedVideoAd GDTRewardVideoAd 实例
+ @param error 具体错误信息
+ */
+- (void)gdt_rewardVideoAd:(GDTRewardVideoAd *)rewardedVideoAd didFailWithError:(NSError *)error
+{
+    
+}
+
+/**
+ 视频广告播放达到激励条件回调
+
+ @param rewardedVideoAd GDTRewardVideoAd 实例
+ */
+- (void)gdt_rewardVideoAdDidRewardEffective:(GDTRewardVideoAd *)rewardedVideoAd
+{
+    
+}
+
+/**
+ 视频广告视频播放完成
+
+ @param rewardedVideoAd GDTRewardVideoAd 实例
+ */
+- (void)gdt_rewardVideoAdDidPlayFinish:(GDTRewardVideoAd *)rewardedVideoAd
+{
+    
+}
+
+#pragma mark - 百度 -
+
+- (void)loadBDAd
+{
+    self.bdVideoAd = [[BaiduMobAdRewardVideo alloc] init];
+    self.bdVideoAd.publisherId = self.appId;
+    self.bdVideoAd.AdUnitTag = self.bdSlotId;
+    self.bdVideoAd.delegate = self;
+    [self.bdVideoAd load];
+}
+
+#pragma mark - BaiduMobAdRewardVideoDelegate
+/**
+ * 激励视频广告请求成功
+ */
+- (void)rewardedAdLoadSuccess:(BaiduMobAdRewardVideo *)video
+{
+    
+}
+
+/**
+ * 激励视频广告请求失败
+ */
+- (void)rewardedAdLoadFail:(BaiduMobAdRewardVideo *)video
+{
+    
+}
+
+/**
+ *  视频缓存成功
+ */
+- (void)rewardedVideoAdLoaded:(BaiduMobAdRewardVideo *)video
+{
+    
+}
+
+/**
+ *  视频缓存失败
+ */
+- (void)rewardedVideoAdLoadFailed:(BaiduMobAdRewardVideo *)video withError:(BaiduMobFailReason)reason
+{
+    
+}
+
+/**
+ *  视频开始播放
+ */
+- (void)rewardedVideoAdDidStarted:(BaiduMobAdRewardVideo *)video
+{
+    
+}
+
+/**
+ *  广告展示失败
+ */
+- (void)rewardedVideoAdShowFailed:(BaiduMobAdRewardVideo *)video withError:(BaiduMobFailReason)reason
+{
+    
+}
+
+/**
+ *  广告完成播放
+ */
+- (void)rewardedVideoAdDidPlayFinish:(BaiduMobAdRewardVideo *)video
+{
+    
+}
+
+/**
+ *  用户点击关闭
+ @param progress 当前播放进度 单位百分比 （注意浮点数）
+ */
+- (void)rewardedVideoAdDidClose:(BaiduMobAdRewardVideo *)video withPlayingProgress:(CGFloat)progress
+{
+    
+}
+
+/**
+ *  用户点击下载/查看详情
+ @param progress 当前播放进度 单位百分比
+ */
+- (void)rewardedVideoAdDidClick:(BaiduMobAdRewardVideo *)video withPlayingProgress:(CGFloat)progress
+{
+    
+}
+
 @end
+

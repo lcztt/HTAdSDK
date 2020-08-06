@@ -12,9 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HTBannerAd : NSObject
 
-- (instancetype)initWithSlotID:(NSString *)slotID rootViewController:(UIViewController *)vc adSize:(CGSize)adSize;
-
-//@property (nonatomic, strong, readonly) BUNativeExpressBannerView *bannerView;
+@property (nonatomic, copy) NSString *appId;
+@property (nonatomic, copy) NSString *csjSlotId;
+@property (nonatomic, copy) NSString *gdtSlotId;
+@property (nonatomic, copy) NSString *bdSlotId;
 
 - (void)loadAdData;
 

@@ -13,12 +13,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HTRewardVideoAd : NSObject
 
++ (void)shareInstance;
+
 @property (nonatomic, weak) id <HTRewardVideoAdDelegate> delegate;
 
-- (instancetype)initWithSlotID:(NSString *)slotID;
+@property (nonatomic, copy) NSString *appId;
+@property (nonatomic, copy) NSString *csjSlotId;
+@property (nonatomic, copy) NSString *gdtSlotId;
+@property (nonatomic, copy) NSString *bdSlotId;
 
--  (void)loadAdData;
+// 平台优先级，默认是：scj,gdt,bd
+@property (nonatomic, strong) NSArray *platformPriority;
 
+- (void)loadAd;
 - (void)showAdWithRootViewController:(UIViewController *)rootVC;
 
 @end

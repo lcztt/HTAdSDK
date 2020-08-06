@@ -37,9 +37,13 @@
 #import "BaiduMobAdVideoView.h"
 #import "BaiduMobAdView.h"
 #import "BaiduMobCpuInfoManager.h"
-#import "BDAdSDKManager.h"
-#import "HTBUAdSDKManager.h"
-#import "HTGDTAdSDKManager.h"
+#import "HTBannerAd.h"
+#import "HTBannerAdView.h"
+#import "HTAdDefine.h"
+#import "HTAdSDK.h"
+#import "HTAdSDKManager.h"
+#import "HTRewardVideoAd.h"
+#import "HTSplashAd.h"
 #import "HTUMManager.h"
 
 FOUNDATION_EXPORT double HTAdSDKVersionNumber;
