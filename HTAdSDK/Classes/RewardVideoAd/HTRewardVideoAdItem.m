@@ -285,7 +285,7 @@ BaiduMobAdRewardVideoDelegate>
 
 - (void)loadGDTAd
 {
-    self.gdtVideoAd = [[GDTRewardVideoAd alloc] initWithAppId:self.appId placementId:self.gdtSlotId];
+    self.gdtVideoAd = [[GDTRewardVideoAd alloc] initWithPlacementId:self.gdtSlotId];
     self.gdtVideoAd.delegate = self;
     [self.gdtVideoAd loadAd];
 }
@@ -387,7 +387,7 @@ BaiduMobAdRewardVideoDelegate>
 - (void)loadBDAd
 {
     self.bdVideoAd = [[BaiduMobAdRewardVideo alloc] init];
-    self.bdVideoAd.publisherId = self.appId;
+    self.bdVideoAd.publisherId = self.bdAppId;
     self.bdVideoAd.AdUnitTag = self.bdSlotId;
     self.bdVideoAd.delegate = self;
     [self.bdVideoAd load];

@@ -15,11 +15,15 @@
 + (void)initSDK
 {
     [BUAdSDKManager setLoglevel:BUAdSDKLogLevelDebug];
+    [BUAdSDKManager setIsPaidApp:NO];
+    
+    [GDTSDKConfig registerAppId:@""];
+    
     NSLog(@"GDT version %@", GDTSDKConfig.sdkVersion);
     NSLog(@"BU version %@", BUAdSDKManager.SDKVersion);
     NSLog(@"Baidu version %@", SDK_VERSION_IN_MSSP);
 
-    [BUAdSDKManager setIsPaidApp:NO];
+    
 }
 
 @end

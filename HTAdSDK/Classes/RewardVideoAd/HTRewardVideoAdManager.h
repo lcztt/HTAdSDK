@@ -14,9 +14,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)shareInstance;
 
-@property (nonatomic, copy) NSString *appId;
 @property (nonatomic, copy) NSString *csjSlotId;
 @property (nonatomic, copy) NSString *gdtSlotId;
+
+@property (nonatomic, copy) NSString *bdAppId;
 @property (nonatomic, copy) NSString *bdSlotId;
 
 // 平台优先级，默认是：scj,gdt,bd

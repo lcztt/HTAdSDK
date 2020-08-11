@@ -18,9 +18,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) kVendorAdPlatform platform;
 
-@property (nonatomic, copy) NSString *appId;
 @property (nonatomic, copy) NSString *csjSlotId;
 @property (nonatomic, copy) NSString *gdtSlotId;
+
+@property (nonatomic, copy) NSString *bdAppId;
 @property (nonatomic, copy) NSString *bdSlotId;
 
 - (void)loadData;

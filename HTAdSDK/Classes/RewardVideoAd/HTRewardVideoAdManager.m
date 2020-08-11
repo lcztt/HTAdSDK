@@ -40,10 +40,13 @@
 
 - (void)initAdQueue
 {
+    [self.adQueue removeAllObjects];
+    self.preShowIndex = 0;
+    
     for (NSNumber *platform in self.platformPriority) {
         
         HTRewardVideoAdItem *item = [[HTRewardVideoAdItem alloc] init];
-        item.appId = self.appId;
+        item.bdAppId = self.bdAppId;
         item.csjSlotId = self.csjSlotId;
         item.gdtSlotId = self.gdtSlotId;
         item.bdSlotId = self.bdSlotId;
@@ -65,17 +68,43 @@
 
 - (HTRewardVideoAdItem *)getValidAdData
 {
-    HTRewardVideoAdItem *_tempItem = nil;
+    NSInteger index = self.preShowIndex % self.adQueue.count;
+    HTRewardVideoAdItem *adItem = self.adQueue[index];
     
-    for (HTRewardVideoAdItem *item in self.adQueue) {
-        if (item.isAdValid) {
-            _tempItem = item;
-            break;
-        } else if (item.checkValidCount > 3) {
-            
-        }
-    }
-    return _tempItem;
+    HTRewardVideoAdItem *item = [[HTRewardVideoAdItem alloc] init];
+    item.bdAppId = self.bdAppId;
+    item.csjSlotId = self.csjSlotId;
+    item.gdtSlotId = self.gdtSlotId;
+    item.bdSlotId = self.bdSlotId;
+    item.platform = adItem.platform;
+    [item loadData];
+    [self.adQueue replaceObjectAtIndex:index withObject:item];
+    
+    self.preShowIndex++
+    return adItem;
+    
+//    if (adItem.isAdValid) {
+//        HTRewardVideoAdItem *item = [[HTRewardVideoAdItem alloc] init];
+//        item.bdAppId = self.bdAppId;
+//        item.csjSlotId = self.csjSlotId;
+//        item.gdtSlotId = self.gdtSlotId;
+//        item.bdSlotId = self.bdSlotId;
+//        item.platform = adItem.platform;
+//        [item loadData];
+//        [self.adQueue replaceObjectAtIndex:index withObject:item];
+//
+//        self.preShowIndex++;
+//        return adItem;
+//    }
+//
+//    if (adItem.checkValidCount >= 3) {
+//
+//
+//        self.preShowIndex++;
+//    }
+//
+//    return nil;
+    
 }
 
 #pragma mark - getter -
