@@ -1,18 +1,17 @@
 //
-//  HTRewardVideoAd.m
+//  HTRewardVideoAdItem.m
 //  AllPopMake-mobile
 //
 //  Created by vitas on 2020/7/4.
 //
 
-#import "HTRewardVideoAd.h"
+#import "HTRewardVideoAdItem.h"
 #import <BUAdSDK/BUAdSDK.h>
 #import "GDTRewardVideoAd.h"
 #import <BaiduMobAdSDK/BaiduMobAdRewardVideo.h>
 #import <BaiduMobAdSDK/BaiduMobAdRewardVideoDelegate.h>
-#import "HTAdDefine.h"
 
-@interface HTRewardVideoAd ()
+@interface HTRewardVideoAdItem ()
 <BUNativeExpressRewardedVideoAdDelegate,
 GDTRewardedVideoAdDelegate,
 BaiduMobAdRewardVideoDelegate>
@@ -21,64 +20,59 @@ BaiduMobAdRewardVideoDelegate>
 @property (nonatomic, strong) GDTRewardVideoAd *gdtVideoAd;
 @property (nonatomic, strong) BaiduMobAdRewardVideo *bdVideoAd;
 
-// 记录当前队列中显示的广告索引
-@property (nonatomic, assign) NSInteger preShowIndex;
+@property (nonatomic, assign, readwrite) NSInteger checkValidCount;
 
 @end
 
 
-@implementation HTRewardVideoAd
+@implementation HTRewardVideoAdItem
 
-+ (void)shareInstance
+- (void)loadData
 {
-    static dispatch_once_t onceToken;
-    static HTRewardVideoAd *_instance;
-    dispatch_once(&onceToken, ^{
-        _instance = [[HTRewardVideoAd alloc] init];
-    });
+    self.checkValidCount = 0;
+    
+    if (self.platform == kVendorAdPlatformCSJ) {
+        [self loadCSJAd];
+    } else if (self.platform == kVendorAdPlatformGDT) {
+        [self loadGDTAd];
+    } else if (self.platform == kVendorAdPlatformBD) {
+        [self loadBDAd];
+    }
 }
 
-- (instancetype)init
+- (BOOL)isAdValid
 {
-    self = [super init];
-    if (self) {
-        self.platformPriority = @[@(kVendorAdPlatformCSJ), @(kVendorAdPlatformGDT), @(kVendorAdPlatformBD)];
-        self.preShowIndex = 0;
-    }
-    return self;
-}
-
-- (void)loadAd
-{
-    if ([self.platformPriority containsObject:@(kVendorAdPlatformCSJ)]) {
-        if (!self.csjVideoAd.isAdValid) {
-            [self loadCSJAd];
-        }
-    }
+    self.checkValidCount++;
     
-    if ([self.platformPriority containsObject:@(kVendorAdPlatformGDT)]) {
-        if (!self.gdtVideoAd.isAdValid) {
-            [self loadGDTAd];
-        }
+    if (self.platform == kVendorAdPlatformCSJ) {
+        return self.csjVideoAd.isAdValid;
+    } else if (self.platform == kVendorAdPlatformGDT) {
+        return self.gdtVideoAd.isAdValid;
+    } else if (self.platform == kVendorAdPlatformBD) {
+        return [self.bdVideoAd isReady];
     }
-    
-    if ([self.platformPriority containsObject:@(kVendorAdPlatformBD)]) {
-        if (![self.bdVideoAd isReady]) {
-            [self loadBDAd];
-        }
-    }
+    return false;
 }
 
 - (void)showAdWithRootViewController:(UIViewController *)rootVC
 {
-    if (self.platformPriority.count > self.preShowIndex) {
-        kVendorAdPlatform platform = [self.platformPriority[self.preShowIndex] integerValue];
-        if (platform == kVendorAdPlatformCSJ) {
+    if (self.platform == kVendorAdPlatformCSJ) {
+        if (self.csjVideoAd.isAdValid) {
             [self.csjVideoAd showAdFromRootViewController:rootVC];
-        } else if (platform == kVendorAdPlatformGDT) {
+        } else {
+            NSLog(@"穿山甲视频广告数据不可用");
+        }
+    } else if (self.platform == kVendorAdPlatformGDT) {
+        if (self.gdtVideoAd.isAdValid) {
             [self.gdtVideoAd showAdFromRootViewController:rootVC];
-        } else if (platform == kVendorAdPlatformBD) {
+        } else {
+            NSLog(@"广点通视频广告数据不可用");
+        }
+    } else if (self.platform == kVendorAdPlatformBD) {
+        if ([self.bdVideoAd isReady]) {
             [self.bdVideoAd showFromViewController:rootVC];
+        } else {
+            NSLog(@"百度视频广告数据不可用");
         }
     }
 }

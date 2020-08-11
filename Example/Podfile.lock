@@ -1,13 +1,13 @@
 PODS:
-  - Bytedance-UnionAD (2.9.0.1)
-  - GDTMobSDK (4.10.10):
-    - GDTMobSDK/GDTMobSDK (= 4.10.10)
-  - GDTMobSDK/GDTMobSDK (4.10.10)
+  - Bytedance-UnionAD (3.1.0.9)
+  - GDTMobSDK (4.11.10):
+    - GDTMobSDK/GDTMobSDK (= 4.11.10)
+  - GDTMobSDK/GDTMobSDK (4.11.10)
   - HTAdSDK (0.1.1):
     - Bytedance-UnionAD
     - GDTMobSDK
     - UMCCommon
-  - UMCCommon (7.1.0)
+  - UMCCommon (7.1.1)
 
 DEPENDENCIES:
   - HTAdSDK (from `../`)
@@ -23,11 +23,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Bytedance-UnionAD: e145f7e98e5a714332d7d31e764696e569483755
-  GDTMobSDK: 374d0d956687ed5e2eb96ff98d3b5d814074b255
+  Bytedance-UnionAD: b841f3266c48da4f1153032589ec95dc1f26e131
+  GDTMobSDK: a1fddadfa32cf4e95d3f70c96677a35c156989f8
   HTAdSDK: b30577c26540f605a98c4791d724d5adb0d36966
-  UMCCommon: 4e80f93492d300245683236668763dc5d0b04dbd
+  UMCCommon: f455f92c125342e360d6ad9eafe484945351eeb5
 
-PODFILE CHECKSUM: 6bc72cfd0b356b60e81143e2e406f34d6e8e931a
+PODFILE CHECKSUM: 2c56fb613c70ef06ea01d9eaef2d3eaf12120689
 
 COCOAPODS: 1.9.3

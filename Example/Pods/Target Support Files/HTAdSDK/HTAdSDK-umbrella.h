@@ -42,7 +42,8 @@
 #import "HTAdDefine.h"
 #import "HTAdSDK.h"
 #import "HTAdSDKManager.h"
-#import "HTRewardVideoAd.h"
+#import "HTRewardVideoAdItem.h"
+#import "HTRewardVideoAdManager.h"
 #import "HTSplashAd.h"
 #import "HTUMManager.h"
 

@@ -1,31 +1,34 @@
 //
-//  HTRewardVideoAd.h
+//  HTRewardVideoAdItem.h
 //  AllPopMake-mobile
 //
 //  Created by vitas on 2020/7/4.
 //
 
 #import <Foundation/Foundation.h>
+#import "HTAdDefine.h"
 
 @protocol HTRewardVideoAdDelegate;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HTRewardVideoAd : NSObject
-
-+ (void)shareInstance;
+@interface HTRewardVideoAdItem : NSObject
 
 @property (nonatomic, weak) id <HTRewardVideoAdDelegate> delegate;
+
+@property (nonatomic, assign) kVendorAdPlatform platform;
 
 @property (nonatomic, copy) NSString *appId;
 @property (nonatomic, copy) NSString *csjSlotId;
 @property (nonatomic, copy) NSString *gdtSlotId;
 @property (nonatomic, copy) NSString *bdSlotId;
 
-// 平台优先级，默认是：scj,gdt,bd
-@property (nonatomic, strong) NSArray *platformPriority;
+- (void)loadData;
 
-- (void)loadAd;
+// 记录 isAdValid 方法调用次数，
+@property (nonatomic, assign, readonly) NSInteger checkValidCount;
+- (BOOL)isAdValid;
+
 - (void)showAdWithRootViewController:(UIViewController *)rootVC;
 
 @end
@@ -36,79 +39,79 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  This method is called when video ad material loaded successfully.
  */
-- (void)rewardedVideoAdDidLoad:(HTRewardVideoAd *)rewardedVideoAd;
+- (void)rewardedVideoAdDidLoad:(HTRewardVideoAdItem *)rewardedVideoAd;
 
 /**
  This method is called when video ad materia failed to load.
  @param error : the reason of error
  */
-- (void)rewardedVideoAd:(HTRewardVideoAd *)rewardedVideoAd didLoadFailWithError:(NSError *_Nullable)error;
+- (void)rewardedVideoAd:(HTRewardVideoAdItem *)rewardedVideoAd didLoadFailWithError:(NSError *_Nullable)error;
 
 /**
  This method is called when cached successfully.
  */
-- (void)rewardedVideoAdDidDownLoadVideo:(HTRewardVideoAd *)rewardedVideoAd;
+- (void)rewardedVideoAdDidDownLoadVideo:(HTRewardVideoAdItem *)rewardedVideoAd;
 
 /**
  This method is called when rendering a nativeExpressAdView successed.
  */
-- (void)rewardedVideoAdViewRenderSuccess:(HTRewardVideoAd *)rewardedVideoAd;
+- (void)rewardedVideoAdViewRenderSuccess:(HTRewardVideoAdItem *)rewardedVideoAd;
 
 /**
  This method is called when a nativeExpressAdView failed to render.
  @param error : the reason of error
  */
-- (void)rewardedVideoAdViewRenderFail:(HTRewardVideoAd *)rewardedVideoAd error:(NSError *_Nullable)error;
+- (void)rewardedVideoAdViewRenderFail:(HTRewardVideoAdItem *)rewardedVideoAd error:(NSError *_Nullable)error;
 
 /**
  This method is called when video ad slot will be showing.
  */
-- (void)rewardedVideoAdWillVisible:(HTRewardVideoAd *)rewardedVideoAd;
+- (void)rewardedVideoAdWillVisible:(HTRewardVideoAdItem *)rewardedVideoAd;
 
 
 /**
  This method is called when video ad slot has been shown.
  */
-- (void)rewardedVideoAdDidVisible:(HTRewardVideoAd *)rewardedVideoAd;
+- (void)rewardedVideoAdDidVisible:(HTRewardVideoAdItem *)rewardedVideoAd;
 
 /**
  This method is called when video ad is about to close.
  */
-- (void)rewardedVideoAdWillClose:(HTRewardVideoAd *)rewardedVideoAd;
+- (void)rewardedVideoAdWillClose:(HTRewardVideoAdItem *)rewardedVideoAd;
 
 /**
  This method is called when video ad is closed.
  */
-- (void)rewardedVideoAdDidClose:(HTRewardVideoAd *)rewardedVideoAd;
+- (void)rewardedVideoAdDidClose:(HTRewardVideoAdItem *)rewardedVideoAd;
 
 /**
  This method is called when video ad is clicked.
  */
-- (void)rewardedVideoAdDidClick:(HTRewardVideoAd *)rewardedVideoAd;
+- (void)rewardedVideoAdDidClick:(HTRewardVideoAdItem *)rewardedVideoAd;
 
 /**
  This method is called when the user clicked skip button.
  */
-- (void)rewardedVideoAdDidClickSkip:(HTRewardVideoAd *)rewardedVideoAd;
+- (void)rewardedVideoAdDidClickSkip:(HTRewardVideoAdItem *)rewardedVideoAd;
 
 /**
  This method is called when video ad play completed or an error occurred.
  @param error : the reason of error
  */
-- (void)rewardedVideoAdDidPlayFinish:(HTRewardVideoAd *)rewardedVideoAd didFailWithError:(NSError *_Nullable)error;
+- (void)rewardedVideoAdDidPlayFinish:(HTRewardVideoAdItem *)rewardedVideoAd didFailWithError:(NSError *_Nullable)error;
 
 /**
  Server verification which is requested asynchronously is succeeded. now include two v erify methods:
       1. C2C need  server verify  2. S2S don't need server verify
  @param verify :return YES when return value is 2000.
  */
-- (void)rewardedVideoAdServerRewardDidSucceed:(HTRewardVideoAd *)rewardedVideoAd verify:(BOOL)verify;
+- (void)rewardedVideoAdServerRewardDidSucceed:(HTRewardVideoAdItem *)rewardedVideoAd verify:(BOOL)verify;
 
 /**
  Server verification which is requested asynchronously is failed.
  Return value is not 2000.
  */
-- (void)rewardedVideoAdServerRewardDidFail:(HTRewardVideoAd *)rewardedVideoAd;
+- (void)rewardedVideoAdServerRewardDidFail:(HTRewardVideoAdItem *)rewardedVideoAd;
 
 @end
 
