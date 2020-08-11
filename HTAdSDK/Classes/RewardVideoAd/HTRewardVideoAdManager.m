@@ -80,7 +80,7 @@
     [item loadData];
     [self.adQueue replaceObjectAtIndex:index withObject:item];
     
-    self.preShowIndex++
+    self.preShowIndex++;
     return adItem;
     
 //    if (adItem.isAdValid) {
