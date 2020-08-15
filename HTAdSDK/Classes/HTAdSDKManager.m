@@ -12,18 +12,29 @@
 
 @implementation HTAdSDKManager
 
-+ (void)initSDK
++ (void)registGDTSDKWithAppId:(NSString *)appId
 {
+    [GDTSDKConfig registerAppId:appId];
+    NSLog(@"GDT version %@", GDTSDKConfig.sdkVersion);
+}
+
++ (void)registCSJSDK
+{
+#if DEBUG
     [BUAdSDKManager setLoglevel:BUAdSDKLogLevelDebug];
+#else
+    [BUAdSDKManager setLoglevel:BUAdSDKLogLevelNone];
+#endif
+    
     [BUAdSDKManager setIsPaidApp:NO];
     
-    [GDTSDKConfig registerAppId:@""];
-    
-    NSLog(@"GDT version %@", GDTSDKConfig.sdkVersion);
     NSLog(@"BU version %@", BUAdSDKManager.SDKVersion);
-    NSLog(@"Baidu version %@", SDK_VERSION_IN_MSSP);
-
     
+}
+
++ (void)registBDSDK
+{
+    NSLog(@"Baidu version %@", SDK_VERSION_IN_MSSP);
 }
 
 @end
