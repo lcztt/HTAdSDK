@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HTRewardVideoAdManager : NSObject
 
-+ (void)shareInstance;
++ (instancetype)shareInstance;
 
 @property (nonatomic, copy) NSString *csjSlotId;
 @property (nonatomic, copy) NSString *gdtSlotId;

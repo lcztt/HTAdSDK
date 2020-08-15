@@ -19,13 +19,14 @@
 
 @implementation HTRewardVideoAdManager
 
-+ (void)shareInstance
++ (instancetype)shareInstance
 {
     static dispatch_once_t onceToken;
     static HTRewardVideoAdManager *_instance;
     dispatch_once(&onceToken, ^{
         _instance = [[HTRewardVideoAdManager alloc] init];
     });
+    return _instance;
 }
 
 - (instancetype)init
