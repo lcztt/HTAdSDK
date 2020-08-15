@@ -11,9 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HTAdSDKManager : NSObject
 
-+ (void)registGDTSDKWithAppId:(NSString *)appId;
++ (void)registCSJSDKWithAppId:(NSString *)appId;
 
-+ (void)registCSJSDK;
++ (void)registGDTSDKWithAppId:(NSString *)appId;
 
 + (void)registBDSDK;
 

@@ -46,11 +46,6 @@
     for (NSNumber *platform in self.platformPriority) {
         
         HTRewardVideoAdItem *item = [[HTRewardVideoAdItem alloc] init];
-        item.bdAppId = self.bdAppId;
-        item.csjSlotId = self.csjSlotId;
-        item.gdtSlotId = self.gdtSlotId;
-        item.bdSlotId = self.bdSlotId;
-        
         if ([platform integerValue] == kVendorAdPlatformCSJ) {
             item.platform = kVendorAdPlatformCSJ;
         } else if ([platform integerValue] == kVendorAdPlatformGDT) {
@@ -58,10 +53,14 @@
         } else if ([platform integerValue] == kVendorAdPlatformBD) {
             item.platform = kVendorAdPlatformBD;
         } else {
-            break;
+            continue;
         }
-        [item loadData];
         
+        item.bdAppId = self.bdAppId;
+        item.csjSlotId = self.csjSlotId;
+        item.gdtSlotId = self.gdtSlotId;
+        item.bdSlotId = self.bdSlotId;
+        [item loadData];
         [self.adQueue addObject:item];
     }
 }

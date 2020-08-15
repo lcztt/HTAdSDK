@@ -12,14 +12,9 @@
 
 @implementation HTAdSDKManager
 
-+ (void)registGDTSDKWithAppId:(NSString *)appId
++ (void)registCSJSDKWithAppId:(NSString *)appId
 {
-    [GDTSDKConfig registerAppId:appId];
-    NSLog(@"GDT version %@", GDTSDKConfig.sdkVersion);
-}
-
-+ (void)registCSJSDK
-{
+    [BUAdSDKManager setAppID:appId];
 #if DEBUG
     [BUAdSDKManager setLoglevel:BUAdSDKLogLevelDebug];
 #else
@@ -29,6 +24,12 @@
     [BUAdSDKManager setIsPaidApp:NO];
     
     NSLog(@"BU version %@", BUAdSDKManager.SDKVersion);
+}
+
++ (void)registGDTSDKWithAppId:(NSString *)appId
+{
+    [GDTSDKConfig registerAppId:appId];
+    NSLog(@"GDT version %@", GDTSDKConfig.sdkVersion);
 }
 
 + (void)registBDSDK
