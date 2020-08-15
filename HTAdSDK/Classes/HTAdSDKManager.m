@@ -29,7 +29,6 @@
     [BUAdSDKManager setIsPaidApp:NO];
     
     NSLog(@"BU version %@", BUAdSDKManager.SDKVersion);
-    
 }
 
 + (void)registBDSDK
