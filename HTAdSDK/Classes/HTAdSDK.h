@@ -14,7 +14,8 @@
 
 #import <HTAdSDK/HTSplashAd.h>
 
-#import <HTAdSDK/HTRewardVideoAd.h>
+#import <HTAdSDK/HTRewardVideoAdItem.h>
+#import <HTAdSDK/HTRewardVideoAdManager.h>
 
 #import <HTAdSDK/HTBannerAd.h>
 #import <HTAdSDK/HTBannerAdView.h>
