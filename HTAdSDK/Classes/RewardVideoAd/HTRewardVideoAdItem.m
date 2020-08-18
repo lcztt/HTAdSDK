@@ -94,7 +94,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)nativeExpressRewardedVideoAdDidLoad:(BUNativeExpressRewardedVideoAd *)rewardedVideoAd
 {
-    NSLog(@"----------此方法在成功加载视频广告素材时调用。");
+    NSLog(@"穿山甲----------此方法在成功加载视频广告素材时调用。");
     
 }
 
@@ -104,7 +104,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)nativeExpressRewardedVideoAd:(BUNativeExpressRewardedVideoAd *)rewardedVideoAd didFailWithError:(NSError *_Nullable)error
 {
-    NSLog(@"----------当视频广告材料加载失败时调用此方法。error.code = %ld", (long)error.code);
+    NSLog(@"穿山甲----------当视频广告材料加载失败时调用此方法。error.code = %ld", (long)error.code);
     
     if ([self.delegate respondsToSelector:@selector(rewardedAdLoadFail:)]) {
         [self.delegate rewardedAdLoadFail:error];
@@ -116,7 +116,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)nativeExpressRewardedVideoAdCallback:(BUNativeExpressRewardedVideoAd *)rewardedVideoAd withType:(BUNativeExpressRewardedVideoAdType)nativeExpressVideoType
 {
-    
+    NSLog(@"穿山甲----------视频广告渲染好后回调");
 }
 
 /**
@@ -124,7 +124,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)nativeExpressRewardedVideoAdDidDownLoadVideo:(BUNativeExpressRewardedVideoAd *)rewardedVideoAd
 {
-    NSLog(@"----------成功缓存时调用此方法。");
+    NSLog(@"穿山甲----------成功缓存时调用此方法。");
     if ([self.delegate respondsToSelector:@selector(rewardedAdLoadSuccess:)]) {
         [self.delegate rewardedAdLoadSuccess:self];
     }
@@ -135,7 +135,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)nativeExpressRewardedVideoAdViewRenderSuccess:(BUNativeExpressRewardedVideoAd *)rewardedVideoAd
 {
-    NSLog(@"----------渲染成功时调用此方法。");
+    NSLog(@"穿山甲----------渲染成功时调用此方法。");
     
 }
 
@@ -145,7 +145,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)nativeExpressRewardedVideoAdViewRenderFail:(BUNativeExpressRewardedVideoAd *)rewardedVideoAd error:(NSError *_Nullable)error
 {
-    
+    NSLog(@"穿山甲----------模板渲染失败：%@" [error description]);
 }
 
 /**
@@ -153,7 +153,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)nativeExpressRewardedVideoAdWillVisible:(BUNativeExpressRewardedVideoAd *)rewardedVideoAd
 {
-    NSLog(@"----------此方法在显示视频广告槽时调用。");
+    NSLog(@"穿山甲----------此方法在显示视频广告槽时调用。");
     
 }
 
@@ -162,7 +162,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)nativeExpressRewardedVideoAdDidVisible:(BUNativeExpressRewardedVideoAd *)rewardedVideoAd
 {
-    NSLog(@"----------此方法在显示视频广告槽时调用。");
+    NSLog(@"穿山甲----------此方法在显示视频广告槽时调用。");
     if ([self.delegate respondsToSelector:@selector(rewardedVideoAdDidStarted:)]) {
         [self.delegate rewardedVideoAdDidStarted:self];
     }
@@ -173,7 +173,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)nativeExpressRewardedVideoAdWillClose:(BUNativeExpressRewardedVideoAd *)rewardedVideoAd
 {
-    NSLog(@"----------此方法在视频广告即将关闭时调用。");
+    NSLog(@"穿山甲----------此方法在视频广告即将关闭时调用。");
 }
 
 /**
@@ -181,7 +181,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)nativeExpressRewardedVideoAdDidClose:(BUNativeExpressRewardedVideoAd *)rewardedVideoAd
 {
-    NSLog(@"----------此方法在视频广告关闭时调用。");
+    NSLog(@"穿山甲----------此方法在视频广告关闭时调用。");
     
     //视频结束后，再加载一次广告数据，保证广告的不重复
 //    [self.csjVideoAd loadAdData];
@@ -196,7 +196,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)nativeExpressRewardedVideoAdDidClick:(BUNativeExpressRewardedVideoAd *)rewardedVideoAd
 {
-    NSLog(@"----------此方法在单击视频广告时调用。");
+    NSLog(@"穿山甲----------此方法在单击视频广告时调用。");
     
 }
 
@@ -206,7 +206,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)nativeExpressRewardedVideoAdDidClickSkip:(BUNativeExpressRewardedVideoAd *)rewardedVideoAd
 {
-    NSLog(@"----------此方法在单击视频广告时调用。");
+    NSLog(@"穿山甲----------此方法在单击视频广告时调用。");
     
 }
 
@@ -217,7 +217,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)nativeExpressRewardedVideoAdDidPlayFinish:(BUNativeExpressRewardedVideoAd *)rewardedVideoAd didFailWithError:(NSError *_Nullable)error
 {
-    NSLog(@"----------此方法在视频广告播放完成或发生错误时调用。error.code = %ld", (long)error.code);
+    NSLog(@"穿山甲----------此方法在视频广告播放完成或发生错误时调用。error.code = %ld", (long)error.code);
     if (!error) {
         if ([self.delegate respondsToSelector:@selector(rewardedVideoAdDidPlayFinish:)]) {
             [self.delegate rewardedVideoAdDidPlayFinish:error];
@@ -237,7 +237,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)nativeExpressRewardedVideoAdServerRewardDidSucceed:(BUNativeExpressRewardedVideoAd *)rewardedVideoAd verify:(BOOL)verify
 {
-    NSLog(@"----------异步请求的服务器验证成功。");
+    NSLog(@"穿山甲----------异步请求的服务器验证成功。");
     
 }
 
@@ -248,7 +248,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)nativeExpressRewardedVideoAdServerRewardDidFail:(BUNativeExpressRewardedVideoAd *)rewardedVideoAd
 {
-    NSLog(@"----------异步请求的服务器验证失败。");
+    NSLog(@"穿山甲----------异步请求的服务器验证失败。");
     
 }
 
@@ -258,7 +258,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)nativeExpressRewardedVideoAdDidCloseOtherController:(BUNativeExpressRewardedVideoAd *)rewardedVideoAd interactionType:(BUInteractionType)interactionType
 {
-    
+    NSLog(@"穿山甲----------关闭其他controller。");
 }
 
 #pragma mark - 广点通 -
@@ -278,6 +278,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)gdt_rewardVideoAdDidLoad:(GDTRewardVideoAd *)rewardedVideoAd
 {
+    NSLog(@"广点通----------广告数据加载成功。");
     if ([self.delegate respondsToSelector:@selector(rewardedAdLoadSuccess:)]) {
         [self.delegate rewardedAdLoadSuccess:self];
     }
@@ -290,7 +291,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)gdt_rewardVideoAdVideoDidLoad:(GDTRewardVideoAd *)rewardedVideoAd
 {
-    
+    NSLog(@"广点通----------视频数据下载成功。");
 }
 
 /**
@@ -300,7 +301,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)gdt_rewardVideoAdWillVisible:(GDTRewardVideoAd *)rewardedVideoAd
 {
-    
+    NSLog(@"广点通----------视频播放页即将展示。");
 }
 
 /**
@@ -310,6 +311,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)gdt_rewardVideoAdDidExposed:(GDTRewardVideoAd *)rewardedVideoAd
 {
+    NSLog(@"广点通----------视频广告曝光。");
     if ([self.delegate respondsToSelector:@selector(rewardedVideoAdDidStarted:)]) {
         [self.delegate rewardedVideoAdDidStarted:self];
     }
@@ -322,6 +324,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)gdt_rewardVideoAdDidClose:(GDTRewardVideoAd *)rewardedVideoAd
 {
+    NSLog(@"广点通----------视频播放页关闭。");
     if ([self.delegate respondsToSelector:@selector(rewardedVideoAdDidClose:)]) {
         [self.delegate rewardedVideoAdDidClose:self];
     }
@@ -334,7 +337,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)gdt_rewardVideoAdDidClicked:(GDTRewardVideoAd *)rewardedVideoAd
 {
-    
+    NSLog(@"广点通----------点击视频广告。");
 }
 
 /**
@@ -345,7 +348,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)gdt_rewardVideoAd:(GDTRewardVideoAd *)rewardedVideoAd didFailWithError:(NSError *)error
 {
-    
+    NSLog(@"广点通----------视频广告各种错误信息回调:%@", [error description]);
 }
 
 /**
@@ -355,7 +358,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)gdt_rewardVideoAdDidRewardEffective:(GDTRewardVideoAd *)rewardedVideoAd
 {
-    
+    NSLog(@"广点通----------视频广告播放达到激励条件。");
 }
 
 /**
@@ -365,6 +368,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)gdt_rewardVideoAdDidPlayFinish:(GDTRewardVideoAd *)rewardedVideoAd
 {
+    NSLog(@"广点通----------视频广告视频播放完成。");
     if ([self.delegate respondsToSelector:@selector(rewardedVideoAdDidPlayFinish:)]) {
         [self.delegate rewardedVideoAdDidPlayFinish:self];
     }
@@ -387,6 +391,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)rewardedAdLoadSuccess:(BaiduMobAdRewardVideo *)video
 {
+    NSLog(@"百度----------激励视频广告请求成功。");
     if ([self.delegate respondsToSelector:@selector(rewardedAdLoadSuccess:)]) {
         [self.delegate rewardedAdLoadSuccess:self];
     }
@@ -397,6 +402,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)rewardedAdLoadFail:(BaiduMobAdRewardVideo *)video
 {
+    NSLog(@"百度----------激励视频广告请求失败。");
     if ([self.delegate respondsToSelector:@selector(rewardedAdLoadFail:)]) {
         [self.delegate rewardedAdLoadFail:self];
     }
@@ -407,7 +413,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)rewardedVideoAdLoaded:(BaiduMobAdRewardVideo *)video
 {
-    
+    NSLog(@"百度----------视频缓存成功。");
 }
 
 /**
@@ -415,7 +421,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)rewardedVideoAdLoadFailed:(BaiduMobAdRewardVideo *)video withError:(BaiduMobFailReason)reason
 {
-    
+    NSLog(@"百度----------视频缓存失败。");
 }
 
 /**
@@ -423,6 +429,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)rewardedVideoAdDidStarted:(BaiduMobAdRewardVideo *)video
 {
+    NSLog(@"百度----------视频开始播放。");
     if ([self.delegate respondsToSelector:@selector(rewardedVideoAdDidStarted:)]) {
         [self.delegate rewardedVideoAdDidStarted:self];
     }
@@ -433,6 +440,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)rewardedVideoAdShowFailed:(BaiduMobAdRewardVideo *)video withError:(BaiduMobFailReason)reason
 {
+    NSLog(@"百度----------广告展示失败。");
     if ([self.delegate respondsToSelector:@selector(rewardedVideoAdShowFailed:)]) {
         [self.delegate rewardedVideoAdShowFailed:self];
     }
@@ -443,6 +451,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)rewardedVideoAdDidPlayFinish:(BaiduMobAdRewardVideo *)video
 {
+    NSLog(@"百度----------广告完成播放。");
     if ([self.delegate respondsToSelector:@selector(rewardedVideoAdDidPlayFinish:)]) {
         [self.delegate rewardedVideoAdDidPlayFinish:self];
     }
@@ -454,6 +463,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)rewardedVideoAdDidClose:(BaiduMobAdRewardVideo *)video withPlayingProgress:(CGFloat)progress
 {
+    NSLog(@"百度----------用户点击关闭。");
     if ([self.delegate respondsToSelector:@selector(rewardedVideoAdDidClose:)]) {
         [self.delegate rewardedVideoAdDidClose:self];
     }
@@ -465,7 +475,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)rewardedVideoAdDidClick:(BaiduMobAdRewardVideo *)video withPlayingProgress:(CGFloat)progress
 {
-    
+    NSLog(@"百度----------用户点击下载/查看详情。");
 }
 
 @end

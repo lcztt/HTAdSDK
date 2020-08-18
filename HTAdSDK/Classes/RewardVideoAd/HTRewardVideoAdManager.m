@@ -68,43 +68,35 @@
 
 - (HTRewardVideoAdItem *)getValidAdData
 {
-    NSInteger index = self.preShowIndex % self.adQueue.count;
-    HTRewardVideoAdItem *adItem = self.adQueue[index];
+    HTRewardVideoAdItem *adItem = nil;
+    for (NSInteger i = self.preShowIndex; i< self.preShowIndex + self.adQueue.count; i++) {
+        
+        NSInteger index = self.preShowIndex % self.adQueue.count;
+        self.preShowIndex++;
+        adItem = self.adQueue[index];
+        
+        if (adItem.isAdValid) {
+            HTRewardVideoAdItem *item = [[HTRewardVideoAdItem alloc] init];
+            item.bdAppId = self.bdAppId;
+            item.csjSlotId = self.csjSlotId;
+            item.gdtSlotId = self.gdtSlotId;
+            item.bdSlotId = self.bdSlotId;
+            item.platform = adItem.platform;
+            [item loadData];
+            [self.adQueue replaceObjectAtIndex:index withObject:item];
+            break;
+        } else {
+            [adItem loadData];
+            adItem = nil;
+        }
+    }
     
-    HTRewardVideoAdItem *item = [[HTRewardVideoAdItem alloc] init];
-    item.bdAppId = self.bdAppId;
-    item.csjSlotId = self.csjSlotId;
-    item.gdtSlotId = self.gdtSlotId;
-    item.bdSlotId = self.bdSlotId;
-    item.platform = adItem.platform;
-    [item loadData];
-    [self.adQueue replaceObjectAtIndex:index withObject:item];
+    if (adItem == nil) {
+        adItem = [self.adQueue firstObject];
+        self.preShowIndex = 0;
+    }
     
-    self.preShowIndex++;
     return adItem;
-    
-//    if (adItem.isAdValid) {
-//        HTRewardVideoAdItem *item = [[HTRewardVideoAdItem alloc] init];
-//        item.bdAppId = self.bdAppId;
-//        item.csjSlotId = self.csjSlotId;
-//        item.gdtSlotId = self.gdtSlotId;
-//        item.bdSlotId = self.bdSlotId;
-//        item.platform = adItem.platform;
-//        [item loadData];
-//        [self.adQueue replaceObjectAtIndex:index withObject:item];
-//
-//        self.preShowIndex++;
-//        return adItem;
-//    }
-//
-//    if (adItem.checkValidCount >= 3) {
-//
-//
-//        self.preShowIndex++;
-//    }
-//
-//    return nil;
-    
 }
 
 #pragma mark - getter -
