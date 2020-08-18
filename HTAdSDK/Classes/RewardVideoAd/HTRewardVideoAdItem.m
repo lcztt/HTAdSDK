@@ -145,7 +145,7 @@ BaiduMobAdRewardVideoDelegate>
  */
 - (void)nativeExpressRewardedVideoAdViewRenderFail:(BUNativeExpressRewardedVideoAd *)rewardedVideoAd error:(NSError *_Nullable)error
 {
-    NSLog(@"穿山甲----------模板渲染失败：%@" [error description]);
+    NSLog(@"穿山甲----------模板渲染失败：%@", [error description]);
 }
 
 /**
