@@ -25,103 +25,94 @@
 			);
 			name = GDTMobSDK;
 		};
-		6F6B630FA5213AB083E7CEF1F986FE44 /* UMCCommon */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 043D8943E88670B68120DCFA880F4284 /* Build configuration list for PBXAggregateTarget "UMCCommon" */;
-			buildPhases = (
-			);
-			dependencies = (
-			);
-			name = UMCCommon;
-		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		01F88A44D30AB45DAAB49E0DCF678DAE /* HTUMManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E0F57A26C4D59C4A876D842CCD52E7FB /* HTUMManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		055FE75C9C8DBCD8708E2C269A170E41 /* HTRewardVideoAdManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F081A8B83098F3660ED09EBD4A36E43 /* HTRewardVideoAdManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		071E409D7C3053165819E80A5107FAC1 /* BaiduMobAdSmartFeedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F55E5DF04FE5E9BE0A29DB0E2C4D79E /* BaiduMobAdSmartFeedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E7879D2E62F76D01BC3FDE937749D6E /* BaiduMobAdNativeAdView.h in Headers */ = {isa = PBXBuildFile; fileRef = B632EC43D1DF4B0CFE585BF229426784 /* BaiduMobAdNativeAdView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		134FE426FBCE4DC5EFABD0CBD18C02BE /* BaiduMobAdNative.h in Headers */ = {isa = PBXBuildFile; fileRef = C07FC82B87C6D6E579A578A894EC22F4 /* BaiduMobAdNative.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		14E9F7393AA16B0FA5A8CAB11A2631C8 /* Pods-HTAdSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E29BA466DAB1BF274A628FB7405FB4 /* Pods-HTAdSDK_Example-dummy.m */; };
-		1E7B27E33B282C228951F5CBFCFAFE13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		21ABB2B58CD47BBF0F6213C83E19F8CC /* BaiduMobAdPreroll.h in Headers */ = {isa = PBXBuildFile; fileRef = C0FB9443E3D7772EEDBAFD8D3E27E4D8 /* BaiduMobAdPreroll.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		272434E8A6356965EF2C77404704613C /* BaiduMobAdNativeAdObject.h in Headers */ = {isa = PBXBuildFile; fileRef = D7B08E9F8DCB45FCF0B5F574F4953051 /* BaiduMobAdNativeAdObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BF21B998D6E70EE915441A8CF38EBE3 /* BaiduMobAdDelegateProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 50EA03D4B13ED6F74560D1FFAE471D0E /* BaiduMobAdDelegateProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E30CFD8E9EC8D7BB56B66EF256F6851 /* HTRewardVideoAdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 201FBEF8CAD1318CEF4C678D71913757 /* HTRewardVideoAdManager.m */; };
-		5017B1591F45613C7E08C1E30B7BA62A /* HTSplashAd.h in Headers */ = {isa = PBXBuildFile; fileRef = EDB28491D00BBEDED9375F2D34782759 /* HTSplashAd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5286EB3ABEEACA7F9E2C5F02932C6BF1 /* BaiduMobAdBaseNativeAdDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 59785B5D06D3D63FF9B66F82D2696E87 /* BaiduMobAdBaseNativeAdDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5FF0A24B6DF7F87DAF61AFE25797E61E /* BaiduMobAdSetting.h in Headers */ = {isa = PBXBuildFile; fileRef = F47A44B1A99B3C0D849AF9ECF4C88434 /* BaiduMobAdSetting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0007BEE836760A8F26549320D941A60E /* HTAdDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A5A4D73478243BB2CD03C4A4E11EB6 /* HTAdDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05831F825DE57CB327821AE152D60201 /* HTAdSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22D0FA4DBB21EFA2F85E70FC74915828 /* HTAdSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C91D6A2CCB190589A635B785404E9B4 /* HTBannerAdView.h in Headers */ = {isa = PBXBuildFile; fileRef = 19B4D5817DE7B7D7AC769A4A4228E6DA /* HTBannerAdView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DEA8615066BB23BA1421B2673C2E2DF /* baidumobadsdk.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 666DC90B2B4B2F18CDC9027F3B510995 /* baidumobadsdk.bundle */; };
+		0FBAB714D4C4344BD515E241D1702DF3 /* Pods-HTAdSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8E29BA466DAB1BF274A628FB7405FB4 /* Pods-HTAdSDK_Example-dummy.m */; };
+		164B9CA346C79B12DABBB6C2C732632A /* BaiduMobAdView.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F19916F2A3F1860510DFDCE4859278 /* BaiduMobAdView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16EF4F66EEBCA360B24FA5B2ADC8BF6E /* BaiduMobAdHybridAdManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35006F0FDFF971C3A8C4C3599B26086C /* BaiduMobAdHybridAdManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17BB8CC9710F147EB528A0117FCA5B91 /* Pods-HTAdSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09295D23C4CF434C10A5F8F92057FB65 /* Pods-HTAdSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18FBC0AB63768FFC78E9F199DEF8B268 /* BaiduMobAdPrerollDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A098C93ACC63F73DC97F36B18488A82 /* BaiduMobAdPrerollDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C50BA5A70CD1E438FA987BC5C768A18 /* BaiduMobAdInterstitialDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 60790B1A3AB257C268034D66F84E109F /* BaiduMobAdInterstitialDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		248C83D6A9A71FC501319E84494EA78E /* BaiduMobAdBaseNativeAdObject.h in Headers */ = {isa = PBXBuildFile; fileRef = B6EAB790D304CCCCC4758FC3E8C45103 /* BaiduMobAdBaseNativeAdObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3080363BE52C824BE277E08DE02AC44F /* BaiduMobAdBaseNativeAdView.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A57EC1383E73F3111327A4FE7727A6 /* BaiduMobAdBaseNativeAdView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33F3E6B0CB20A187D3B43796EC72C955 /* HTAdSDKManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 78783D5EE13FBC1CD7BB5C4B2A98EEB6 /* HTAdSDKManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A431549A160BB88AFD0C0C960DDE60B /* BaiduMobAdDelegateProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 50EA03D4B13ED6F74560D1FFAE471D0E /* BaiduMobAdDelegateProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EBA6B023D2AE7842A04CBF80129A52E /* HTRewardVideoAdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 201FBEF8CAD1318CEF4C678D71913757 /* HTRewardVideoAdManager.m */; };
+		4511B9F04505C6BE8D8FA471BED87809 /* BaiduMobAdCommonConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A06E1DA7279303A9F7E703F00CEEA5C /* BaiduMobAdCommonConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FE34C635073FA616BDBF01C3C6430C1 /* HTSplashAd.h in Headers */ = {isa = PBXBuildFile; fileRef = EDB28491D00BBEDED9375F2D34782759 /* HTSplashAd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FFF34B9CF51D3C1855E4BF3F1A5FC33 /* HTRewardVideoAdManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F081A8B83098F3660ED09EBD4A36E43 /* HTRewardVideoAdManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		505D6383A0BFF024E366744FAD892374 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		53B3351336C1BD668D1914B92327FFC8 /* HTBannerAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 643747BBAB131A500F9ADDE6BDED7633 /* HTBannerAdView.m */; };
+		58581519AD72F3D5C37FA0136E3C8894 /* BaiduMobAdSplashDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F2D92E6412A405AAFD30A3AEF39492A /* BaiduMobAdSplashDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DEC40A05E5996A61EB5D7A9ADD7FE5D /* BaiduMobAdSmartFeedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F55E5DF04FE5E9BE0A29DB0E2C4D79E /* BaiduMobAdSmartFeedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F04E1FC300E725ABC9A56E0988D1435 /* HTUMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A56A99E601A8243BA6609C62A484A1F /* HTUMManager.m */; };
+		5F686784FF33244694247F37273368B2 /* HTRewardVideoAdItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6890E13C258773AE20D4386454A1C5 /* HTRewardVideoAdItem.m */; };
 		63826A4738B5CFD5654EEB77212AE2B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		694B269B4892DF4D7B0B58EF2BD6092A /* HTAdDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 12A5A4D73478243BB2CD03C4A4E11EB6 /* HTAdDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6EBC76702E4FDD6244B7EE26D0D197B1 /* HTAdSDKManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 78783D5EE13FBC1CD7BB5C4B2A98EEB6 /* HTAdSDKManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		701F5470B2D4648B8E002968E7D879D5 /* BaiduMobAdCommonConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A06E1DA7279303A9F7E703F00CEEA5C /* BaiduMobAdCommonConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7D0509CAF73C3042CB92B9B7442AAE45 /* HTAdSDKManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 634D6F977BC125191A3DC833BA5B3822 /* HTAdSDKManager.m */; };
-		880C64B308075F327C0BEAEC26D3A724 /* BaiduMobAdNativeAdDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FBE364B3E30B73FFAF1073EBE7276BA /* BaiduMobAdNativeAdDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		88CCFE3CC8F6E680ED3D92D3B66B7B4C /* BaiduMobCpuInfoManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B0803D21BC642A95A4C867A985AB6BEE /* BaiduMobCpuInfoManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8965CB2069BE9A2B4F8E116A94088F72 /* BaiduMobAdNativeVideoViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B579679C854A620491FC51FC3C55A015 /* BaiduMobAdNativeVideoViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68915D26C037426A9B3B9CF18DE7F9F8 /* BaiduMobAdSplash.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB9B9DAB86C44E6EBE5F9263E53D329 /* BaiduMobAdSplash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69AE067BF5DFEDF0D4DC7DE8FDCBF865 /* HTRewardVideoAdItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA607DE6EB6662FF6D480150B0B39B1 /* HTRewardVideoAdItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		741CE15C6829D1988C1468F04A7BA18A /* BaiduMobAdNative.h in Headers */ = {isa = PBXBuildFile; fileRef = C07FC82B87C6D6E579A578A894EC22F4 /* BaiduMobAdNative.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77CABDD4AA549659379900ADEBADEAB5 /* BaiduMobAdNativeVideoViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B579679C854A620491FC51FC3C55A015 /* BaiduMobAdNativeVideoViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C315A767CBE5103280E2C73B972A69D /* BaiduMobAdNativeAdView.h in Headers */ = {isa = PBXBuildFile; fileRef = B632EC43D1DF4B0CFE585BF229426784 /* BaiduMobAdNativeAdView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E25509689E0E11462E346AFF8D8F23A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		819353DBCA3D2381E0D25BE751A7CA48 /* HTAdSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = F3007A237745EC4FCA5E900FCE04E417 /* HTAdSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82B3DDCC93A0EB2CE4BF48B50A8F7B5D /* HTUMManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E0F57A26C4D59C4A876D842CCD52E7FB /* HTUMManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86BEC87B3F65642A50ADA414F1E7D4ED /* HTBannerAd.h in Headers */ = {isa = PBXBuildFile; fileRef = 67A1BB0056F4E8CC0A7D28095D4DE63A /* HTBannerAd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89566735F40A2217950A639CD5CE8EDD /* BaiduMobAdNativeAdObject.h in Headers */ = {isa = PBXBuildFile; fileRef = D7B08E9F8DCB45FCF0B5F574F4953051 /* BaiduMobAdNativeAdObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A44214828FFE07BEF2644A4DD050D0C /* BaiduMobAdRewardVideo.h in Headers */ = {isa = PBXBuildFile; fileRef = C6C95255D095607112BF090ED299E6A7 /* BaiduMobAdRewardVideo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8CEA60B31DD46BB9F073A9EA99A9146E /* Pods-HTAdSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 065599647C77D064734BAD6EAA8C680B /* Pods-HTAdSDK_Tests-dummy.m */; };
-		92FB4E7175A93A79AF330B35C417AFE8 /* HTRewardVideoAdItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA607DE6EB6662FF6D480150B0B39B1 /* HTRewardVideoAdItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		98125C521E50B359FE1339E54C708EB5 /* HTRewardVideoAdItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6890E13C258773AE20D4386454A1C5 /* HTRewardVideoAdItem.m */; };
-		995638C5B64B50D8AB4D55084181A020 /* BaiduMobAdNativeVideoBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 98E57E0D2429BFEF4741B5AB86BD7963 /* BaiduMobAdNativeVideoBaseView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9E4FBD60A014067CA12E8C4E5929248B /* baidumobadsdk.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 666DC90B2B4B2F18CDC9027F3B510995 /* baidumobadsdk.bundle */; };
-		A2CF70F9D9CA344A3037820D1FF0F316 /* BaiduMobAdHybridAdManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 35006F0FDFF971C3A8C4C3599B26086C /* BaiduMobAdHybridAdManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A30AB6AA22EC11A7833D0AB9B6A90052 /* Pods-HTAdSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09295D23C4CF434C10A5F8F92057FB65 /* Pods-HTAdSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F6EB77B641629C3D1A5335C3113334D /* BaiduMobAdNativeAdDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FBE364B3E30B73FFAF1073EBE7276BA /* BaiduMobAdNativeAdDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A040FE71A545942E1E40572D59295881 /* HTAdSDKManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 634D6F977BC125191A3DC833BA5B3822 /* HTAdSDKManager.m */; };
 		A75CB0C163DDB7482AD4B9161D720595 /* Pods-HTAdSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86D2BCFB1DDA6ECD22EF2237DB95DCA2 /* Pods-HTAdSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A770A3045B14EDC5419F4C9E1FD655E9 /* BaiduMobAdView.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F19916F2A3F1860510DFDCE4859278 /* BaiduMobAdView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A834B9EBD3B278E1A7624288E4AC52F9 /* BaiduMobAdRewardVideo.h in Headers */ = {isa = PBXBuildFile; fileRef = C6C95255D095607112BF090ED299E6A7 /* BaiduMobAdRewardVideo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A888B3EE6990E7B5ADE8B35BC86957D8 /* BaiduMobAdBaseNativeAdView.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A57EC1383E73F3111327A4FE7727A6 /* BaiduMobAdBaseNativeAdView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AFD4755EEC768440AB461606315758EA /* BaiduMobAdInterstitial.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AF94CEF4AAA1557FB72FF558DDF1C60 /* BaiduMobAdInterstitial.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B30AE9AA2F915A9A1C3431715CE7E53A /* BaiduMobAdNativeVideoView.h in Headers */ = {isa = PBXBuildFile; fileRef = A235D361558CA16D85FFDF1D5B7022A7 /* BaiduMobAdNativeVideoView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B4B813B3491EEE60727DB9BB5AE5485B /* HTBannerAd.h in Headers */ = {isa = PBXBuildFile; fileRef = 67A1BB0056F4E8CC0A7D28095D4DE63A /* HTBannerAd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BD712B9C110DCB06DD314013039BED73 /* HTBannerAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 84569EB0A50E93F56145A4FF703196B9 /* HTBannerAd.m */; };
-		C0BEB2337D523A60CD78F40615B6881F /* BaiduMobAdNativeWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F1DD33FD5A0DEAA0A6A2C81375CF99 /* BaiduMobAdNativeWebView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8798CE8404E0C1DDFE9C1B1ED4AFB32 /* BaiduMobAdVideoView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7571B24D46EA240794C420A678B21203 /* BaiduMobAdVideoView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC27DF8FCEFB827D75ED56E12D26E57B /* BaiduMobAdInterstitialDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 60790B1A3AB257C268034D66F84E109F /* BaiduMobAdInterstitialDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CD0D7FE63379AF5F7D96D688AD2271AC /* HTAdSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22D0FA4DBB21EFA2F85E70FC74915828 /* HTAdSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CDE0FC267DBA4AF41539B5CC71E4810B /* BaiduMobAdBaseNativeAdObject.h in Headers */ = {isa = PBXBuildFile; fileRef = B6EAB790D304CCCCC4758FC3E8C45103 /* BaiduMobAdBaseNativeAdObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CFAEEF6EF190B0CEDBCF29126FAA5E0F /* BaiduMobAdPrerollDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A098C93ACC63F73DC97F36B18488A82 /* BaiduMobAdPrerollDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA8B4849FD8B363E89E2DA5F52126728 /* BaiduMobAdRewardVideoDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AC22AFA8EE1F6366E8C5555A70D14970 /* BaiduMobAdRewardVideoDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DFA6EE08AA53AC0EF60BFD9C42939E16 /* HTBannerAdView.h in Headers */ = {isa = PBXBuildFile; fileRef = 19B4D5817DE7B7D7AC769A4A4228E6DA /* HTBannerAdView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E9B29DE0F15889AD11F626B1441C7075 /* HTSplashAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 953321EC8E92D75EDC997478799EAEC7 /* HTSplashAd.m */; };
-		EB693F083E143200A8260721DE5C2CF2 /* HTBannerAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 643747BBAB131A500F9ADDE6BDED7633 /* HTBannerAdView.m */; };
-		EC10D60946D408713EF01CE1534141C1 /* HTUMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A56A99E601A8243BA6609C62A484A1F /* HTUMManager.m */; };
-		F41F0409F9B415E6EDB1EAD31B524825 /* HTAdSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = F3007A237745EC4FCA5E900FCE04E417 /* HTAdSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5DDB636CAC1AD4DDD8ACDD9EFE7EC97 /* BaiduMobAdSplash.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB9B9DAB86C44E6EBE5F9263E53D329 /* BaiduMobAdSplash.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F6C7A69274F173B18B9E39E190352719 /* BaiduMobAdSplashDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F2D92E6412A405AAFD30A3AEF39492A /* BaiduMobAdSplashDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FB283CEF6A53EA4749AEE1E3DA59535F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		FED817B54A4CE88F6090BAF46104FBA3 /* HTAdSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD58B6CB9DB9DA6842D125389007180 /* HTAdSDK-dummy.m */; };
+		AF27AB917ECA0DCA24CD81BB01D211B1 /* HTSplashAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 953321EC8E92D75EDC997478799EAEC7 /* HTSplashAd.m */; };
+		AF37773A5F1FDD2A4A295313AC435AED /* BaiduMobCpuInfoManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B0803D21BC642A95A4C867A985AB6BEE /* BaiduMobCpuInfoManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B340B77E336313614E23C145AAF335F5 /* HTAdSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD58B6CB9DB9DA6842D125389007180 /* HTAdSDK-dummy.m */; };
+		D3C7CF38F33D7A07A52F6CBDA1164422 /* HTBannerAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 84569EB0A50E93F56145A4FF703196B9 /* HTBannerAd.m */; };
+		D9CB2FBF3E9ED34EC3ED0F15A49C2BFD /* BaiduMobAdInterstitial.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AF94CEF4AAA1557FB72FF558DDF1C60 /* BaiduMobAdInterstitial.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAE9E49914CBB19E2196E46BBE364BA0 /* BaiduMobAdRewardVideoDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AC22AFA8EE1F6366E8C5555A70D14970 /* BaiduMobAdRewardVideoDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB6D34B306E4CEC29BFDBC87795CB811 /* BaiduMobAdVideoView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7571B24D46EA240794C420A678B21203 /* BaiduMobAdVideoView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDE8E8D0AF7E17277C013C05DD651C4D /* BaiduMobAdNativeVideoBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 98E57E0D2429BFEF4741B5AB86BD7963 /* BaiduMobAdNativeVideoBaseView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0283020967162C301E6880EF2AD2DF5 /* BaiduMobAdSetting.h in Headers */ = {isa = PBXBuildFile; fileRef = F47A44B1A99B3C0D849AF9ECF4C88434 /* BaiduMobAdSetting.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E516B0DCD1F41295D6AA565E707CFD38 /* BaiduMobAdNativeWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F1DD33FD5A0DEAA0A6A2C81375CF99 /* BaiduMobAdNativeWebView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E85706BA3AC7C1B5E76B5E385F59846A /* BaiduMobAdBaseNativeAdDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 59785B5D06D3D63FF9B66F82D2696E87 /* BaiduMobAdBaseNativeAdDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED601431226100C610AE371205BB73CC /* BaiduMobAdNativeVideoView.h in Headers */ = {isa = PBXBuildFile; fileRef = A235D361558CA16D85FFDF1D5B7022A7 /* BaiduMobAdNativeVideoView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0A7F2FBEA9C9F04DA26A128CEFFFCED /* BaiduMobAdPreroll.h in Headers */ = {isa = PBXBuildFile; fileRef = C0FB9443E3D7772EEDBAFD8D3E27E4D8 /* BaiduMobAdPreroll.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0EC3B3D7B66FB2C0E9D85FABDE0A3EF9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6F6B630FA5213AB083E7CEF1F986FE44;
-			remoteInfo = UMCCommon;
-		};
-		393231F2DF6EBBB2CD8DC0581AA6715B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6F2BDBDBBAD8487EF4614E1D729C5DD0;
-			remoteInfo = GDTMobSDK;
-		};
-		698BBBB6318D459EBD186A9A85ACE904 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6F6B630FA5213AB083E7CEF1F986FE44;
-			remoteInfo = UMCCommon;
-		};
-		7B560721573833BCF99DECB1CE39F012 /* PBXContainerItemProxy */ = {
+		0E87FFBCFFE29203CE089B615EB51539 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 33E446FE13F6C3D06F866D1D9AA26708;
 			remoteInfo = "Bytedance-UnionAD";
 		};
-		9813FF2F018DC6461A436C6EE5A50661 /* PBXContainerItemProxy */ = {
+		197833AFF482B3378A14C3594B3CD673 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33E446FE13F6C3D06F866D1D9AA26708;
+			remoteInfo = "Bytedance-UnionAD";
+		};
+		1D19F63DF55AF88FC1E22D6FA17C4031 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A92EE3314CD77829B96E477FD90E75D;
+			remoteInfo = HTAdSDK;
+		};
+		466DCC405D9B540F811A87AE97F563B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F2BDBDBBAD8487EF4614E1D729C5DD0;
+			remoteInfo = GDTMobSDK;
+		};
+		7D2D8FAB70BE614F8B2DC8BAA8901788 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -135,57 +126,41 @@
 			remoteGlobalIDString = 60CA2E5747594C8A9EEE300DF86AE34A;
 			remoteInfo = "Pods-HTAdSDK_Example";
 		};
-		BDC25F15044E6480C82E8EABC00AF139 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5A92EE3314CD77829B96E477FD90E75D;
-			remoteInfo = HTAdSDK;
-		};
-		FB6B4515A1EC5F7D68A771FDE1063E05 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 33E446FE13F6C3D06F866D1D9AA26708;
-			remoteInfo = "Bytedance-UnionAD";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		003564774966BA326F925759F3AD81D4 /* GDTNativeExpressAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTNativeExpressAd.h; path = lib/GDTNativeExpressAd.h; sourceTree = "<group>"; };
+		04521FF76E57CA39A6AED16B1CABA30F /* GDTBaseAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTBaseAdNetworkAdapterProtocol.h; path = lib/GDTBaseAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
 		065599647C77D064734BAD6EAA8C680B /* Pods-HTAdSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HTAdSDK_Tests-dummy.m"; sourceTree = "<group>"; };
 		066088F1C9404E20744F51D06F94CBE7 /* Pods-HTAdSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HTAdSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		09295D23C4CF434C10A5F8F92057FB65 /* Pods-HTAdSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HTAdSDK_Example-umbrella.h"; sourceTree = "<group>"; };
-		09AF9C0E28017351C43259AB4584DFDE /* UMCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UMCommon.framework; sourceTree = "<group>"; };
-		129449FE7B0C4CE8DACAD8A170EBE2F8 /* UMCCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UMCCommon.debug.xcconfig; sourceTree = "<group>"; };
+		10E6A74949AB685134DA92E069432AE9 /* GDTUnifiedNativeAdView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedNativeAdView.h; path = lib/GDTUnifiedNativeAdView.h; sourceTree = "<group>"; };
 		12A5A4D73478243BB2CD03C4A4E11EB6 /* HTAdDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTAdDefine.h; path = HTAdSDK/Classes/HTAdDefine.h; sourceTree = "<group>"; };
 		19B4D5817DE7B7D7AC769A4A4228E6DA /* HTBannerAdView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HTBannerAdView.h; sourceTree = "<group>"; };
 		1E0CB6FCA580F8DDECEF5D617875EC15 /* BaiduMobAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BaiduMobAdSDK.framework; path = HTAdSDK/Classes/BaiduMobAdSDK/BaiduMobAdSDK.framework; sourceTree = "<group>"; };
 		1EE1B37D66844CDDC40AA14D45905539 /* Pods-HTAdSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HTAdSDK_Tests.modulemap"; sourceTree = "<group>"; };
 		1F55E5DF04FE5E9BE0A29DB0E2C4D79E /* BaiduMobAdSmartFeedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdSmartFeedView.h; sourceTree = "<group>"; };
 		201FBEF8CAD1318CEF4C678D71913757 /* HTRewardVideoAdManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HTRewardVideoAdManager.m; sourceTree = "<group>"; };
-		22A090AC21909824C424115D623ABD72 /* GDTLogoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTLogoView.h; path = lib/GDTLogoView.h; sourceTree = "<group>"; };
+		2123A46E4C44C6A93F445F981B2F82D6 /* GDTNativeExpressProAdManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTNativeExpressProAdManager.h; path = lib/GDTNativeExpressProAdManager.h; sourceTree = "<group>"; };
 		22D0FA4DBB21EFA2F85E70FC74915828 /* HTAdSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HTAdSDK-umbrella.h"; sourceTree = "<group>"; };
 		2528ECB72659F933A38DC65CED862EFE /* HTAdSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HTAdSDK.modulemap; sourceTree = "<group>"; };
-		25ACEE2949F2EFE7F103C392B6AE01D5 /* BUAdSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = BUAdSDK.bundle; path = "Bytedance-UnionAd/Frameworks/BUAdSDK.bundle"; sourceTree = "<group>"; };
+		282174F72C529C8B65A81BA2F2433248 /* GDTSDKDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTSDKDefines.h; path = lib/GDTSDKDefines.h; sourceTree = "<group>"; };
 		2BA607DE6EB6662FF6D480150B0B39B1 /* HTRewardVideoAdItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HTRewardVideoAdItem.h; sourceTree = "<group>"; };
+		2E70C89A9ACDA611A72B846CFA19F31F /* GDTAdTestSetting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTAdTestSetting.h; path = lib/GDTAdTestSetting.h; sourceTree = "<group>"; };
+		2EFA765561CA2ECEC1AF2B4682EDB252 /* GDTMobSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GDTMobSDK.release.xcconfig; sourceTree = "<group>"; };
+		31722779C0BE57A503736E42364E32E4 /* BUAdSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = BUAdSDK.bundle; path = "Bytedance-UnionAd/Frameworks/BUAdSDK.bundle"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3253A3CF45939583128E89C97266B0C3 /* libGDTMobSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGDTMobSDK.a; path = lib/libGDTMobSDK.a; sourceTree = "<group>"; };
 		35006F0FDFF971C3A8C4C3599B26086C /* BaiduMobAdHybridAdManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdHybridAdManager.h; sourceTree = "<group>"; };
-		37F0D7279CEFDACA291A40BABFD5789C /* GDTNativeExpressProAdView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTNativeExpressProAdView.h; path = lib/GDTNativeExpressProAdView.h; sourceTree = "<group>"; };
-		3A07777943603499EDF900803A322785 /* GDTRewardVideoAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTRewardVideoAd.h; path = lib/GDTRewardVideoAd.h; sourceTree = "<group>"; };
-		3A78741CD1FDE8005A80F6462CE07FE4 /* GDTUnifiedNativeAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedNativeAd.h; path = lib/GDTUnifiedNativeAd.h; sourceTree = "<group>"; };
-		3E8082BA1DC39FAA79A38EDAF01AA284 /* GDTVideoConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTVideoConfig.h; path = lib/GDTVideoConfig.h; sourceTree = "<group>"; };
-		40A774FBA4F2856265C5223C10872F2F /* GDTMobSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GDTMobSDK.release.xcconfig; sourceTree = "<group>"; };
 		42F8476CBFB4AA965C2154B8FB9EEDB1 /* HTAdSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HTAdSDK-prefix.pch"; sourceTree = "<group>"; };
-		4586B78F2CA6D02D609E42DA6003C519 /* BUFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BUFoundation.framework; path = "Bytedance-UnionAd/Frameworks/BUFoundation.framework"; sourceTree = "<group>"; };
 		4A56A99E601A8243BA6609C62A484A1F /* HTUMManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HTUMManager.m; sourceTree = "<group>"; };
-		4C94EDB05667839273CE94650A603598 /* GDTUnifiedNativeAdView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedNativeAdView.h; path = lib/GDTUnifiedNativeAdView.h; sourceTree = "<group>"; };
 		4D8E712C93C122902AE584BD79CB25EE /* Pods-HTAdSDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HTAdSDK_Example-Info.plist"; sourceTree = "<group>"; };
+		4DB4319A1A20C183FDAE2D7C4C5F36A0 /* GDTUnifiedInterstitialAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedInterstitialAd.h; path = lib/GDTUnifiedInterstitialAd.h; sourceTree = "<group>"; };
+		4DD55DEF73D4DFE1DFFAE77BD24D41CC /* Bytedance-UnionAD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Bytedance-UnionAD.release.xcconfig"; sourceTree = "<group>"; };
 		4F2D92E6412A405AAFD30A3AEF39492A /* BaiduMobAdSplashDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdSplashDelegate.h; sourceTree = "<group>"; };
 		50EA03D4B13ED6F74560D1FFAE471D0E /* BaiduMobAdDelegateProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdDelegateProtocol.h; sourceTree = "<group>"; };
-		515DB12E71121A76C9EEBEC1A6754138 /* GDTSDKDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTSDKDefines.h; path = lib/GDTSDKDefines.h; sourceTree = "<group>"; };
-		51D9C0AC6DDD75B26938456FEE409361 /* GDTSplashAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTSplashAd.h; path = lib/GDTSplashAd.h; sourceTree = "<group>"; };
 		523DDDED57E6B263A71DBB23121F650A /* Pods-HTAdSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HTAdSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5840E6BE76F95709C011A6412ADEF7F9 /* GDTRewardVideoAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTRewardVideoAdNetworkAdapterProtocol.h; path = lib/GDTRewardVideoAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
+		584888748A5A45DBABFD1EE257FCDEC8 /* GDTSplashAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTSplashAd.h; path = lib/GDTSplashAd.h; sourceTree = "<group>"; };
 		59785B5D06D3D63FF9B66F82D2696E87 /* BaiduMobAdBaseNativeAdDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdBaseNativeAdDelegate.h; sourceTree = "<group>"; };
 		5AF94CEF4AAA1557FB72FF558DDF1C60 /* BaiduMobAdInterstitial.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdInterstitial.h; sourceTree = "<group>"; };
 		5C683478B2A120075F931140DFCF9C76 /* Pods-HTAdSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HTAdSDK_Example.modulemap"; sourceTree = "<group>"; };
@@ -195,36 +170,35 @@
 		643747BBAB131A500F9ADDE6BDED7633 /* HTBannerAdView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HTBannerAdView.m; sourceTree = "<group>"; };
 		666DC90B2B4B2F18CDC9027F3B510995 /* baidumobadsdk.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = baidumobadsdk.bundle; path = HTAdSDK/Classes/BaiduMobAdSDK/baidumobadsdk.bundle; sourceTree = "<group>"; };
 		67A1BB0056F4E8CC0A7D28095D4DE63A /* HTBannerAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HTBannerAd.h; sourceTree = "<group>"; };
-		689FA439065379C91EA9C33EB3C3CEB2 /* GDTRewardVideoAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTRewardVideoAdNetworkAdapterProtocol.h; path = lib/GDTRewardVideoAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
+		6CB33865C0119C3885B1B85421D2897B /* BUFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BUFoundation.framework; path = "Bytedance-UnionAd/Frameworks/BUFoundation.framework"; sourceTree = "<group>"; };
+		6CD0A5328E4F670D07953B5C5FE93446 /* GDTUnifiedBannerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedBannerView.h; path = lib/GDTUnifiedBannerView.h; sourceTree = "<group>"; };
+		6D5D0107B87A92981F1D886804A0E846 /* GDTLogoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTLogoView.h; path = lib/GDTLogoView.h; sourceTree = "<group>"; };
 		6F081A8B83098F3660ED09EBD4A36E43 /* HTRewardVideoAdManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HTRewardVideoAdManager.h; sourceTree = "<group>"; };
-		73A3C3266A9F70C975221CC1D7B4E685 /* GDTMobInterstitial.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTMobInterstitial.h; path = lib/GDTMobInterstitial.h; sourceTree = "<group>"; };
+		736D82B38A502B5D595A17B5D54F0A63 /* GDTRewardVideoAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTRewardVideoAdNetworkConnectorProtocol.h; path = lib/GDTRewardVideoAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
+		738FF29987D2CCA9728CB2DEC155FE84 /* GDTMobSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GDTMobSDK.debug.xcconfig; sourceTree = "<group>"; };
 		7571B24D46EA240794C420A678B21203 /* BaiduMobAdVideoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdVideoView.h; sourceTree = "<group>"; };
 		78783D5EE13FBC1CD7BB5C4B2A98EEB6 /* HTAdSDKManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTAdSDKManager.h; path = HTAdSDK/Classes/HTAdSDKManager.h; sourceTree = "<group>"; };
 		793C705C98F0B008393D6DC6418277F8 /* Pods-HTAdSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HTAdSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		83766C316405584E95164B2B0C40F0D1 /* GDTUnifiedBannerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedBannerView.h; path = lib/GDTUnifiedBannerView.h; sourceTree = "<group>"; };
 		84569EB0A50E93F56145A4FF703196B9 /* HTBannerAd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HTBannerAd.m; sourceTree = "<group>"; };
 		85BF5C25EBF23902D34F1BD74A2799C1 /* HTAdSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HTAdSDK-Info.plist"; sourceTree = "<group>"; };
 		86D2BCFB1DDA6ECD22EF2237DB95DCA2 /* Pods-HTAdSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HTAdSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
 		87711F52C6D9B3986DB6E5F4823ECAA3 /* Pods-HTAdSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HTAdSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		883F59599E30EC8F3164219B7C6F1600 /* GDTHybridAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTHybridAd.h; path = lib/GDTHybridAd.h; sourceTree = "<group>"; };
 		889576D86906007D313E7F71E1992E30 /* Pods_HTAdSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HTAdSDK_Example.framework; path = "Pods-HTAdSDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88B460599D0EBA33C489B42FF113CB13 /* HTAdSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HTAdSDK.framework; path = HTAdSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A06E1DA7279303A9F7E703F00CEEA5C /* BaiduMobAdCommonConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdCommonConfig.h; sourceTree = "<group>"; };
 		8A098C93ACC63F73DC97F36B18488A82 /* BaiduMobAdPrerollDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdPrerollDelegate.h; sourceTree = "<group>"; };
+		8FB32CE27E291D2EE8217E0877E8F752 /* GDTNativeExpressAdView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTNativeExpressAdView.h; path = lib/GDTNativeExpressAdView.h; sourceTree = "<group>"; };
 		8FBE364B3E30B73FFAF1073EBE7276BA /* BaiduMobAdNativeAdDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdNativeAdDelegate.h; sourceTree = "<group>"; };
 		94D2000319D6C0B3C0BDF5FF24ECCCC4 /* HTAdSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HTAdSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		953321EC8E92D75EDC997478799EAEC7 /* HTSplashAd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HTSplashAd.m; sourceTree = "<group>"; };
-		973EF278A7847514A18D5637176ADBB8 /* BUAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BUAdSDK.framework; path = "Bytedance-UnionAd/Frameworks/BUAdSDK.framework"; sourceTree = "<group>"; };
 		98E57E0D2429BFEF4741B5AB86BD7963 /* BaiduMobAdNativeVideoBaseView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdNativeVideoBaseView.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F767E204F57734A2F2959E8581766C1 /* GDTUnifiedNativeAdDataObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedNativeAdDataObject.h; path = lib/GDTUnifiedNativeAdDataObject.h; sourceTree = "<group>"; };
+		9E579C007B3346B5914E92E57A0AD3DA /* Bytedance-UnionAD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Bytedance-UnionAD.debug.xcconfig"; sourceTree = "<group>"; };
 		A235D361558CA16D85FFDF1D5B7022A7 /* BaiduMobAdNativeVideoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdNativeVideoView.h; sourceTree = "<group>"; };
-		A2B84DB5F00294C5D3FA4E01EB15864D /* GDTMobBannerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTMobBannerView.h; path = lib/GDTMobBannerView.h; sourceTree = "<group>"; };
 		A4F1DD33FD5A0DEAA0A6A2C81375CF99 /* BaiduMobAdNativeWebView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdNativeWebView.h; sourceTree = "<group>"; };
 		A7F19916F2A3F1860510DFDCE4859278 /* BaiduMobAdView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdView.h; sourceTree = "<group>"; };
 		AC22AFA8EE1F6366E8C5555A70D14970 /* BaiduMobAdRewardVideoDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdRewardVideoDelegate.h; sourceTree = "<group>"; };
 		B0803D21BC642A95A4C867A985AB6BEE /* BaiduMobCpuInfoManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaiduMobCpuInfoManager.h; sourceTree = "<group>"; };
-		B23CE4815DBF2243EB2C56C22576A2D3 /* GDTBaseAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTBaseAdNetworkAdapterProtocol.h; path = lib/GDTBaseAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
 		B579679C854A620491FC51FC3C55A015 /* BaiduMobAdNativeVideoViewDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdNativeVideoViewDelegate.h; sourceTree = "<group>"; };
 		B632EC43D1DF4B0CFE585BF229426784 /* BaiduMobAdNativeAdView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdNativeAdView.h; sourceTree = "<group>"; };
 		B6EAB790D304CCCCC4758FC3E8C45103 /* BaiduMobAdBaseNativeAdObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdBaseNativeAdObject.h; sourceTree = "<group>"; };
@@ -232,54 +206,54 @@
 		B8E29BA466DAB1BF274A628FB7405FB4 /* Pods-HTAdSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HTAdSDK_Example-dummy.m"; sourceTree = "<group>"; };
 		BAD58B6CB9DB9DA6842D125389007180 /* HTAdSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HTAdSDK-dummy.m"; sourceTree = "<group>"; };
 		BC480CA9228B5D6A6A76FF6F6B96B379 /* Pods-HTAdSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HTAdSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BD024D8C7744D63275165E4B581BA1E6 /* GDTSDKConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTSDKConfig.h; path = lib/GDTSDKConfig.h; sourceTree = "<group>"; };
+		BD556921553530E81A09EEF027E1817E /* GDTNativeExpressRewardVideoAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTNativeExpressRewardVideoAd.h; path = lib/GDTNativeExpressRewardVideoAd.h; sourceTree = "<group>"; };
+		BDF7D43082AF49384DAE7FA0CA63A1FA /* GDTUnifiedNativeAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedNativeAd.h; path = lib/GDTUnifiedNativeAd.h; sourceTree = "<group>"; };
 		BFB9B9DAB86C44E6EBE5F9263E53D329 /* BaiduMobAdSplash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdSplash.h; sourceTree = "<group>"; };
 		C07BB2C2F7646054C838D75EC44849E7 /* HTAdSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HTAdSDK.debug.xcconfig; sourceTree = "<group>"; };
 		C07FC82B87C6D6E579A578A894EC22F4 /* BaiduMobAdNative.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdNative.h; sourceTree = "<group>"; };
 		C0FB9443E3D7772EEDBAFD8D3E27E4D8 /* BaiduMobAdPreroll.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdPreroll.h; sourceTree = "<group>"; };
-		C5DDC34E0FBFC64493DE4DF6FBA4C2A6 /* GDTNativeExpressAdView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTNativeExpressAdView.h; path = lib/GDTNativeExpressAdView.h; sourceTree = "<group>"; };
 		C6C95255D095607112BF090ED299E6A7 /* BaiduMobAdRewardVideo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdRewardVideo.h; sourceTree = "<group>"; };
 		C7734B58FC161548CBA3E9A4469B591E /* Pods-HTAdSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HTAdSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C7A0FD4AE754C1FFEE3F55B0E85462CD /* GDTUnifiedInterstitialAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedInterstitialAd.h; path = lib/GDTUnifiedInterstitialAd.h; sourceTree = "<group>"; };
-		CE68E6FF12822E7470B0F7938D1E8DDB /* Bytedance-UnionAD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Bytedance-UnionAD.release.xcconfig"; sourceTree = "<group>"; };
-		D35412B055E35DB87A077A7F0DDDD5F0 /* libGDTMobSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libGDTMobSDK.a; path = lib/libGDTMobSDK.a; sourceTree = "<group>"; };
+		C8782D12795F3E557F84A57BA5C374CA /* GDTLoadAdParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTLoadAdParams.h; path = lib/GDTLoadAdParams.h; sourceTree = "<group>"; };
+		CB427971F209A5E57B06D279FB7E8722 /* GDTVideoConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTVideoConfig.h; path = lib/GDTVideoConfig.h; sourceTree = "<group>"; };
+		D13A24414817298AADC9CFFBDEF65659 /* GDTMediaView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTMediaView.h; path = lib/GDTMediaView.h; sourceTree = "<group>"; };
+		D353AC200C8067F67090E4E2A9D1EC4A /* GDTHybridAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTHybridAd.h; path = lib/GDTHybridAd.h; sourceTree = "<group>"; };
 		D4A57EC1383E73F3111327A4FE7727A6 /* BaiduMobAdBaseNativeAdView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdBaseNativeAdView.h; sourceTree = "<group>"; };
-		D517D0DBCBC111873F476A0E216ED314 /* GDTSDKConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTSDKConfig.h; path = lib/GDTSDKConfig.h; sourceTree = "<group>"; };
-		D5E79FD58BF37D8A6DDF54ED51C2641C /* GDTLoadAdParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTLoadAdParams.h; path = lib/GDTLoadAdParams.h; sourceTree = "<group>"; };
+		D4E7A391BCEF0556A992B394C777111F /* GDTNativeExpressProAdView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTNativeExpressProAdView.h; path = lib/GDTNativeExpressProAdView.h; sourceTree = "<group>"; };
 		D6B9ACFD4E2D28C3E0C74EE86E25ED23 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		D7B08E9F8DCB45FCF0B5F574F4953051 /* BaiduMobAdNativeAdObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdNativeAdObject.h; sourceTree = "<group>"; };
 		DAC7E066AB70CE27DFA1547D178BDA6B /* Pods-HTAdSDK_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HTAdSDK_Example-resources.sh"; sourceTree = "<group>"; };
 		DEF419662EAFD22D64E29090F138BF76 /* Pods_HTAdSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HTAdSDK_Tests.framework; path = "Pods-HTAdSDK_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0F57A26C4D59C4A876D842CCD52E7FB /* HTUMManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HTUMManager.h; sourceTree = "<group>"; };
-		E9CBC0FBADC54C99628AB3F22FFA1062 /* GDTMediaView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTMediaView.h; path = lib/GDTMediaView.h; sourceTree = "<group>"; };
-		EA1EFE3150721A0D29F8609AFC4A057D /* GDTNativeExpressProAdManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTNativeExpressProAdManager.h; path = lib/GDTNativeExpressProAdManager.h; sourceTree = "<group>"; };
+		E847FD25E349CE5E810107C86493AF6B /* GDTUnifiedNativeAdDataObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTUnifiedNativeAdDataObject.h; path = lib/GDTUnifiedNativeAdDataObject.h; sourceTree = "<group>"; };
 		EDB28491D00BBEDED9375F2D34782759 /* HTSplashAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HTSplashAd.h; sourceTree = "<group>"; };
+		EEA8297F5F84B56E195E7A3FC4352E43 /* GDTRewardVideoAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTRewardVideoAd.h; path = lib/GDTRewardVideoAd.h; sourceTree = "<group>"; };
 		F16A444BDCC850FD6D595A83875864FC /* Pods-HTAdSDK_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HTAdSDK_Tests-Info.plist"; sourceTree = "<group>"; };
+		F179B84643B8EAC0E84E66293841C67B /* GDTAdParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTAdParams.h; path = lib/GDTAdParams.h; sourceTree = "<group>"; };
 		F3007A237745EC4FCA5E900FCE04E417 /* HTAdSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTAdSDK.h; path = HTAdSDK/Classes/HTAdSDK.h; sourceTree = "<group>"; };
-		F4380CB47624D9EE5531E80135C9366B /* GDTRewardVideoAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTRewardVideoAdNetworkConnectorProtocol.h; path = lib/GDTRewardVideoAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
+		F3C1FED02FFBA0ACE1B6F867F2CE83AB /* BUAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BUAdSDK.framework; path = "Bytedance-UnionAd/Frameworks/BUAdSDK.framework"; sourceTree = "<group>"; };
 		F47A44B1A99B3C0D849AF9ECF4C88434 /* BaiduMobAdSetting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BaiduMobAdSetting.h; sourceTree = "<group>"; };
-		F5D330968F8AC59DA28BB69EA05F3002 /* GDTAdParams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTAdParams.h; path = lib/GDTAdParams.h; sourceTree = "<group>"; };
 		F6A6ECA66F8D59AF5138ED4538B8CFA4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		F78C0263DFA9E6866D04E8E6E3FD1630 /* Bytedance-UnionAD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Bytedance-UnionAD.debug.xcconfig"; sourceTree = "<group>"; };
-		FA6E503E9E144D0343A7B93F22514DEA /* GDTMobSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GDTMobSDK.debug.xcconfig; sourceTree = "<group>"; };
+		F6C1083C2BABDC2888EC8C37F24A17BA /* GDTNativeExpressAd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GDTNativeExpressAd.h; path = lib/GDTNativeExpressAd.h; sourceTree = "<group>"; };
 		FE6890E13C258773AE20D4386454A1C5 /* HTRewardVideoAdItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HTRewardVideoAdItem.m; sourceTree = "<group>"; };
 		FE9BDE63684120A1B383B1F0AC051461 /* Pods-HTAdSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HTAdSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FFD342E3569574B8492EF3E744B07E70 /* UMCCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UMCCommon.release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		18A01A0520A9E25A6AFA343325306747 /* Frameworks */ = {
+		6FB34DF63A44FDEDD02AC0E7294887C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB283CEF6A53EA4749AEE1E3DA59535F /* Foundation.framework in Frameworks */,
+				505D6383A0BFF024E366744FAD892374 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C6717FA7ECFE9B10C1E59652F41BBE1 /* Frameworks */ = {
+		902CD2931251653CAE82C46749676ED5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E7B27E33B282C228951F5CBFCFAFE13 /* Foundation.framework in Frameworks */,
+				7E25509689E0E11462E346AFF8D8F23A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,10 +268,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0ECDDE09992D13FA2A12E122DC54F7D2 /* Frameworks */ = {
+		00CC77ED37A4EFCB629002A34EB42CB2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D35412B055E35DB87A077A7F0DDDD5F0 /* libGDTMobSDK.a */,
+				F3C1FED02FFBA0ACE1B6F867F2CE83AB /* BUAdSDK.framework */,
+				6CB33865C0119C3885B1B85421D2897B /* BUFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -345,6 +320,24 @@
 			path = Headers;
 			sourceTree = "<group>";
 		};
+		37CB8C38DA8EEA44D7FA3B49367326B5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				738FF29987D2CCA9728CB2DEC155FE84 /* GDTMobSDK.debug.xcconfig */,
+				2EFA765561CA2ECEC1AF2B4682EDB252 /* GDTMobSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GDTMobSDK";
+			sourceTree = "<group>";
+		};
+		4050219AB58206C283B3913F2B8D0C7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3253A3CF45939583128E89C97266B0C3 /* libGDTMobSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		41CAEC49D288B2B39C4449E2D0AC7584 /* BaiduMobAdSDK.framework */ = {
 			isa = PBXGroup;
 			children = (
@@ -354,14 +347,13 @@
 			path = BaiduMobAdSDK.framework;
 			sourceTree = "<group>";
 		};
-		56C3DF38C0BEEFFD0BBF316D50F36F2A /* Support Files */ = {
+		4E275DDFCF274CC184967D4B0F2D313A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F78C0263DFA9E6866D04E8E6E3FD1630 /* Bytedance-UnionAD.debug.xcconfig */,
-				CE68E6FF12822E7470B0F7938D1E8DDB /* Bytedance-UnionAD.release.xcconfig */,
+				8451261A9DB2777573E085F575BF55E2 /* Bytedance-UnionAD */,
+				8EED63D0FBC6D0A2705F386DFDACC621 /* GDTMobSDK */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/Bytedance-UnionAD";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		5A7309FC0E7AA00ED50EF403CDCC144C /* Frameworks */ = {
@@ -372,34 +364,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6B02A91820118A20F83CCCC2DC503E7A /* Pods */ = {
+		6FE691EF64A9E012BC8EC6012458B629 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C3CE35015878615B4DBD707E2774BA8A /* Bytedance-UnionAD */,
-				6BB08CCE58B269C169A5CF52D31D9944 /* GDTMobSDK */,
-				80A9971A7095194F85583C6DE501F88E /* UMCCommon */,
+				9E579C007B3346B5914E92E57A0AD3DA /* Bytedance-UnionAD.debug.xcconfig */,
+				4DD55DEF73D4DFE1DFFAE77BD24D41CC /* Bytedance-UnionAD.release.xcconfig */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/Bytedance-UnionAD";
 			sourceTree = "<group>";
 		};
-		6BB08CCE58B269C169A5CF52D31D9944 /* GDTMobSDK */ = {
+		8451261A9DB2777573E085F575BF55E2 /* Bytedance-UnionAD */ = {
 			isa = PBXGroup;
 			children = (
-				C66A8C55D49115D58ED550DB32158584 /* GDTMobSDK */,
-				DC71E67614E7FC569B46FD49A7D39ACB /* Support Files */,
+				00CC77ED37A4EFCB629002A34EB42CB2 /* Frameworks */,
+				8A19656CE1ED34ADCFEFA63FA5CC0054 /* Resources */,
+				6FE691EF64A9E012BC8EC6012458B629 /* Support Files */,
 			);
-			name = GDTMobSDK;
-			path = GDTMobSDK;
-			sourceTree = "<group>";
-		};
-		80A9971A7095194F85583C6DE501F88E /* UMCCommon */ = {
-			isa = PBXGroup;
-			children = (
-				EAD4DE1CDAA9BA75C4D963C745C32C63 /* Frameworks */,
-				C7653B919CB2B0BA1B53A597FE4CA570 /* Support Files */,
-			);
-			name = UMCCommon;
-			path = UMCCommon;
+			name = "Bytedance-UnionAD";
+			path = "Bytedance-UnionAD";
 			sourceTree = "<group>";
 		};
 		86A8C40064EF6037945A492CE98EA117 /* BannerAd */ = {
@@ -414,21 +397,54 @@
 			path = HTAdSDK/Classes/BannerAd;
 			sourceTree = "<group>";
 		};
-		9DB2608DFA15C68C4E39A59AE8880368 /* Resources */ = {
+		8A19656CE1ED34ADCFEFA63FA5CC0054 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				25ACEE2949F2EFE7F103C392B6AE01D5 /* BUAdSDK.bundle */,
+				31722779C0BE57A503736E42364E32E4 /* BUAdSDK.bundle */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		A8BC22EA90D31283C556C54F651B18D8 /* Frameworks */ = {
+		8EED63D0FBC6D0A2705F386DFDACC621 /* GDTMobSDK */ = {
 			isa = PBXGroup;
 			children = (
-				973EF278A7847514A18D5637176ADBB8 /* BUAdSDK.framework */,
-				4586B78F2CA6D02D609E42DA6003C519 /* BUFoundation.framework */,
+				B1805EA6FFB45BBD2302C6F6A20C063E /* GDTMobSDK */,
+				37CB8C38DA8EEA44D7FA3B49367326B5 /* Support Files */,
 			);
-			name = Frameworks;
+			name = GDTMobSDK;
+			path = GDTMobSDK;
+			sourceTree = "<group>";
+		};
+		B1805EA6FFB45BBD2302C6F6A20C063E /* GDTMobSDK */ = {
+			isa = PBXGroup;
+			children = (
+				F179B84643B8EAC0E84E66293841C67B /* GDTAdParams.h */,
+				2E70C89A9ACDA611A72B846CFA19F31F /* GDTAdTestSetting.h */,
+				04521FF76E57CA39A6AED16B1CABA30F /* GDTBaseAdNetworkAdapterProtocol.h */,
+				D353AC200C8067F67090E4E2A9D1EC4A /* GDTHybridAd.h */,
+				C8782D12795F3E557F84A57BA5C374CA /* GDTLoadAdParams.h */,
+				6D5D0107B87A92981F1D886804A0E846 /* GDTLogoView.h */,
+				D13A24414817298AADC9CFFBDEF65659 /* GDTMediaView.h */,
+				F6C1083C2BABDC2888EC8C37F24A17BA /* GDTNativeExpressAd.h */,
+				8FB32CE27E291D2EE8217E0877E8F752 /* GDTNativeExpressAdView.h */,
+				2123A46E4C44C6A93F445F981B2F82D6 /* GDTNativeExpressProAdManager.h */,
+				D4E7A391BCEF0556A992B394C777111F /* GDTNativeExpressProAdView.h */,
+				BD556921553530E81A09EEF027E1817E /* GDTNativeExpressRewardVideoAd.h */,
+				EEA8297F5F84B56E195E7A3FC4352E43 /* GDTRewardVideoAd.h */,
+				5840E6BE76F95709C011A6412ADEF7F9 /* GDTRewardVideoAdNetworkAdapterProtocol.h */,
+				736D82B38A502B5D595A17B5D54F0A63 /* GDTRewardVideoAdNetworkConnectorProtocol.h */,
+				BD024D8C7744D63275165E4B581BA1E6 /* GDTSDKConfig.h */,
+				282174F72C529C8B65A81BA2F2433248 /* GDTSDKDefines.h */,
+				584888748A5A45DBABFD1EE257FCDEC8 /* GDTSplashAd.h */,
+				6CD0A5328E4F670D07953B5C5FE93446 /* GDTUnifiedBannerView.h */,
+				4DB4319A1A20C183FDAE2D7C4C5F36A0 /* GDTUnifiedInterstitialAd.h */,
+				BDF7D43082AF49384DAE7FA0CA63A1FA /* GDTUnifiedNativeAd.h */,
+				E847FD25E349CE5E810107C86493AF6B /* GDTUnifiedNativeAdDataObject.h */,
+				10E6A74949AB685134DA92E069432AE9 /* GDTUnifiedNativeAdView.h */,
+				CB427971F209A5E57B06D279FB7E8722 /* GDTVideoConfig.h */,
+				4050219AB58206C283B3913F2B8D0C7C /* Frameworks */,
+			);
+			name = GDTMobSDK;
 			sourceTree = "<group>";
 		};
 		B1D8F8606E1F5BE554267A2BD5D6CC36 /* Support Files */ = {
@@ -499,49 +515,6 @@
 			path = HTAdSDK/Classes/BaiduMobAdSDK;
 			sourceTree = "<group>";
 		};
-		C3CE35015878615B4DBD707E2774BA8A /* Bytedance-UnionAD */ = {
-			isa = PBXGroup;
-			children = (
-				A8BC22EA90D31283C556C54F651B18D8 /* Frameworks */,
-				9DB2608DFA15C68C4E39A59AE8880368 /* Resources */,
-				56C3DF38C0BEEFFD0BBF316D50F36F2A /* Support Files */,
-			);
-			name = "Bytedance-UnionAD";
-			path = "Bytedance-UnionAD";
-			sourceTree = "<group>";
-		};
-		C66A8C55D49115D58ED550DB32158584 /* GDTMobSDK */ = {
-			isa = PBXGroup;
-			children = (
-				F5D330968F8AC59DA28BB69EA05F3002 /* GDTAdParams.h */,
-				B23CE4815DBF2243EB2C56C22576A2D3 /* GDTBaseAdNetworkAdapterProtocol.h */,
-				883F59599E30EC8F3164219B7C6F1600 /* GDTHybridAd.h */,
-				D5E79FD58BF37D8A6DDF54ED51C2641C /* GDTLoadAdParams.h */,
-				22A090AC21909824C424115D623ABD72 /* GDTLogoView.h */,
-				E9CBC0FBADC54C99628AB3F22FFA1062 /* GDTMediaView.h */,
-				A2B84DB5F00294C5D3FA4E01EB15864D /* GDTMobBannerView.h */,
-				73A3C3266A9F70C975221CC1D7B4E685 /* GDTMobInterstitial.h */,
-				003564774966BA326F925759F3AD81D4 /* GDTNativeExpressAd.h */,
-				C5DDC34E0FBFC64493DE4DF6FBA4C2A6 /* GDTNativeExpressAdView.h */,
-				EA1EFE3150721A0D29F8609AFC4A057D /* GDTNativeExpressProAdManager.h */,
-				37F0D7279CEFDACA291A40BABFD5789C /* GDTNativeExpressProAdView.h */,
-				3A07777943603499EDF900803A322785 /* GDTRewardVideoAd.h */,
-				689FA439065379C91EA9C33EB3C3CEB2 /* GDTRewardVideoAdNetworkAdapterProtocol.h */,
-				F4380CB47624D9EE5531E80135C9366B /* GDTRewardVideoAdNetworkConnectorProtocol.h */,
-				D517D0DBCBC111873F476A0E216ED314 /* GDTSDKConfig.h */,
-				515DB12E71121A76C9EEBEC1A6754138 /* GDTSDKDefines.h */,
-				51D9C0AC6DDD75B26938456FEE409361 /* GDTSplashAd.h */,
-				83766C316405584E95164B2B0C40F0D1 /* GDTUnifiedBannerView.h */,
-				C7A0FD4AE754C1FFEE3F55B0E85462CD /* GDTUnifiedInterstitialAd.h */,
-				3A78741CD1FDE8005A80F6462CE07FE4 /* GDTUnifiedNativeAd.h */,
-				9F767E204F57734A2F2959E8581766C1 /* GDTUnifiedNativeAdDataObject.h */,
-				4C94EDB05667839273CE94650A603598 /* GDTUnifiedNativeAdView.h */,
-				3E8082BA1DC39FAA79A38EDAF01AA284 /* GDTVideoConfig.h */,
-				0ECDDE09992D13FA2A12E122DC54F7D2 /* Frameworks */,
-			);
-			name = GDTMobSDK;
-			sourceTree = "<group>";
-		};
 		C67DA793B57E4A003306FE1E7BCA6BAB /* UMCommonSDK */ = {
 			isa = PBXGroup;
 			children = (
@@ -552,23 +525,13 @@
 			path = HTAdSDK/Classes/UMCommonSDK;
 			sourceTree = "<group>";
 		};
-		C7653B919CB2B0BA1B53A597FE4CA570 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				129449FE7B0C4CE8DACAD8A170EBE2F8 /* UMCCommon.debug.xcconfig */,
-				FFD342E3569574B8492EF3E744B07E70 /* UMCCommon.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/UMCCommon";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				BB3659B9DFE7E31E6CE497B32722445D /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				6B02A91820118A20F83CCCC2DC503E7A /* Pods */,
+				4E275DDFCF274CC184967D4B0F2D313A /* Pods */,
 				E108766E111C53B5E00501E792475FC7 /* Products */,
 				D5A1DA6C587EB46DD0DDC581C309FF53 /* Targets Support Files */,
 			);
@@ -589,16 +552,6 @@
 				B3C0C43BEBBF186481D5A2378EB31388 /* Pods-HTAdSDK_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		DC71E67614E7FC569B46FD49A7D39ACB /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FA6E503E9E144D0343A7B93F22514DEA /* GDTMobSDK.debug.xcconfig */,
-				40A774FBA4F2856265C5223C10872F2F /* GDTMobSDK.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/GDTMobSDK";
 			sourceTree = "<group>";
 		};
 		DEB82D32865C11052B88436AF23CD389 /* HTAdSDK */ = {
@@ -630,14 +583,6 @@
 				DEF419662EAFD22D64E29090F138BF76 /* Pods_HTAdSDK_Tests.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		EAD4DE1CDAA9BA75C4D963C745C32C63 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				09AF9C0E28017351C43259AB4584DFDE /* UMCommon.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F2834A03A635C799FE54329C8A84F642 /* Pods-HTAdSDK_Example */ = {
@@ -680,55 +625,47 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		29141F1B31BC06DB5B209577045AD767 /* Headers */ = {
+		45D3CB5E9B2536D742BCC5AD9E68109A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A30AB6AA22EC11A7833D0AB9B6A90052 /* Pods-HTAdSDK_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		54B3EBA664B5C33E24AF1CC406036BDB /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5286EB3ABEEACA7F9E2C5F02932C6BF1 /* BaiduMobAdBaseNativeAdDelegate.h in Headers */,
-				CDE0FC267DBA4AF41539B5CC71E4810B /* BaiduMobAdBaseNativeAdObject.h in Headers */,
-				A888B3EE6990E7B5ADE8B35BC86957D8 /* BaiduMobAdBaseNativeAdView.h in Headers */,
-				701F5470B2D4648B8E002968E7D879D5 /* BaiduMobAdCommonConfig.h in Headers */,
-				2BF21B998D6E70EE915441A8CF38EBE3 /* BaiduMobAdDelegateProtocol.h in Headers */,
-				A2CF70F9D9CA344A3037820D1FF0F316 /* BaiduMobAdHybridAdManager.h in Headers */,
-				AFD4755EEC768440AB461606315758EA /* BaiduMobAdInterstitial.h in Headers */,
-				CC27DF8FCEFB827D75ED56E12D26E57B /* BaiduMobAdInterstitialDelegate.h in Headers */,
-				134FE426FBCE4DC5EFABD0CBD18C02BE /* BaiduMobAdNative.h in Headers */,
-				880C64B308075F327C0BEAEC26D3A724 /* BaiduMobAdNativeAdDelegate.h in Headers */,
-				272434E8A6356965EF2C77404704613C /* BaiduMobAdNativeAdObject.h in Headers */,
-				0E7879D2E62F76D01BC3FDE937749D6E /* BaiduMobAdNativeAdView.h in Headers */,
-				995638C5B64B50D8AB4D55084181A020 /* BaiduMobAdNativeVideoBaseView.h in Headers */,
-				B30AE9AA2F915A9A1C3431715CE7E53A /* BaiduMobAdNativeVideoView.h in Headers */,
-				8965CB2069BE9A2B4F8E116A94088F72 /* BaiduMobAdNativeVideoViewDelegate.h in Headers */,
-				C0BEB2337D523A60CD78F40615B6881F /* BaiduMobAdNativeWebView.h in Headers */,
-				21ABB2B58CD47BBF0F6213C83E19F8CC /* BaiduMobAdPreroll.h in Headers */,
-				CFAEEF6EF190B0CEDBCF29126FAA5E0F /* BaiduMobAdPrerollDelegate.h in Headers */,
-				A834B9EBD3B278E1A7624288E4AC52F9 /* BaiduMobAdRewardVideo.h in Headers */,
-				DA8B4849FD8B363E89E2DA5F52126728 /* BaiduMobAdRewardVideoDelegate.h in Headers */,
-				5FF0A24B6DF7F87DAF61AFE25797E61E /* BaiduMobAdSetting.h in Headers */,
-				071E409D7C3053165819E80A5107FAC1 /* BaiduMobAdSmartFeedView.h in Headers */,
-				F5DDB636CAC1AD4DDD8ACDD9EFE7EC97 /* BaiduMobAdSplash.h in Headers */,
-				F6C7A69274F173B18B9E39E190352719 /* BaiduMobAdSplashDelegate.h in Headers */,
-				C8798CE8404E0C1DDFE9C1B1ED4AFB32 /* BaiduMobAdVideoView.h in Headers */,
-				A770A3045B14EDC5419F4C9E1FD655E9 /* BaiduMobAdView.h in Headers */,
-				88CCFE3CC8F6E680ED3D92D3B66B7B4C /* BaiduMobCpuInfoManager.h in Headers */,
-				694B269B4892DF4D7B0B58EF2BD6092A /* HTAdDefine.h in Headers */,
-				CD0D7FE63379AF5F7D96D688AD2271AC /* HTAdSDK-umbrella.h in Headers */,
-				F41F0409F9B415E6EDB1EAD31B524825 /* HTAdSDK.h in Headers */,
-				6EBC76702E4FDD6244B7EE26D0D197B1 /* HTAdSDKManager.h in Headers */,
-				B4B813B3491EEE60727DB9BB5AE5485B /* HTBannerAd.h in Headers */,
-				DFA6EE08AA53AC0EF60BFD9C42939E16 /* HTBannerAdView.h in Headers */,
-				92FB4E7175A93A79AF330B35C417AFE8 /* HTRewardVideoAdItem.h in Headers */,
-				055FE75C9C8DBCD8708E2C269A170E41 /* HTRewardVideoAdManager.h in Headers */,
-				5017B1591F45613C7E08C1E30B7BA62A /* HTSplashAd.h in Headers */,
-				01F88A44D30AB45DAAB49E0DCF678DAE /* HTUMManager.h in Headers */,
+				E85706BA3AC7C1B5E76B5E385F59846A /* BaiduMobAdBaseNativeAdDelegate.h in Headers */,
+				248C83D6A9A71FC501319E84494EA78E /* BaiduMobAdBaseNativeAdObject.h in Headers */,
+				3080363BE52C824BE277E08DE02AC44F /* BaiduMobAdBaseNativeAdView.h in Headers */,
+				4511B9F04505C6BE8D8FA471BED87809 /* BaiduMobAdCommonConfig.h in Headers */,
+				3A431549A160BB88AFD0C0C960DDE60B /* BaiduMobAdDelegateProtocol.h in Headers */,
+				16EF4F66EEBCA360B24FA5B2ADC8BF6E /* BaiduMobAdHybridAdManager.h in Headers */,
+				D9CB2FBF3E9ED34EC3ED0F15A49C2BFD /* BaiduMobAdInterstitial.h in Headers */,
+				1C50BA5A70CD1E438FA987BC5C768A18 /* BaiduMobAdInterstitialDelegate.h in Headers */,
+				741CE15C6829D1988C1468F04A7BA18A /* BaiduMobAdNative.h in Headers */,
+				8F6EB77B641629C3D1A5335C3113334D /* BaiduMobAdNativeAdDelegate.h in Headers */,
+				89566735F40A2217950A639CD5CE8EDD /* BaiduMobAdNativeAdObject.h in Headers */,
+				7C315A767CBE5103280E2C73B972A69D /* BaiduMobAdNativeAdView.h in Headers */,
+				DDE8E8D0AF7E17277C013C05DD651C4D /* BaiduMobAdNativeVideoBaseView.h in Headers */,
+				ED601431226100C610AE371205BB73CC /* BaiduMobAdNativeVideoView.h in Headers */,
+				77CABDD4AA549659379900ADEBADEAB5 /* BaiduMobAdNativeVideoViewDelegate.h in Headers */,
+				E516B0DCD1F41295D6AA565E707CFD38 /* BaiduMobAdNativeWebView.h in Headers */,
+				F0A7F2FBEA9C9F04DA26A128CEFFFCED /* BaiduMobAdPreroll.h in Headers */,
+				18FBC0AB63768FFC78E9F199DEF8B268 /* BaiduMobAdPrerollDelegate.h in Headers */,
+				8A44214828FFE07BEF2644A4DD050D0C /* BaiduMobAdRewardVideo.h in Headers */,
+				DAE9E49914CBB19E2196E46BBE364BA0 /* BaiduMobAdRewardVideoDelegate.h in Headers */,
+				E0283020967162C301E6880EF2AD2DF5 /* BaiduMobAdSetting.h in Headers */,
+				5DEC40A05E5996A61EB5D7A9ADD7FE5D /* BaiduMobAdSmartFeedView.h in Headers */,
+				68915D26C037426A9B3B9CF18DE7F9F8 /* BaiduMobAdSplash.h in Headers */,
+				58581519AD72F3D5C37FA0136E3C8894 /* BaiduMobAdSplashDelegate.h in Headers */,
+				DB6D34B306E4CEC29BFDBC87795CB811 /* BaiduMobAdVideoView.h in Headers */,
+				164B9CA346C79B12DABBB6C2C732632A /* BaiduMobAdView.h in Headers */,
+				AF37773A5F1FDD2A4A295313AC435AED /* BaiduMobCpuInfoManager.h in Headers */,
+				0007BEE836760A8F26549320D941A60E /* HTAdDefine.h in Headers */,
+				05831F825DE57CB327821AE152D60201 /* HTAdSDK-umbrella.h in Headers */,
+				819353DBCA3D2381E0D25BE751A7CA48 /* HTAdSDK.h in Headers */,
+				33F3E6B0CB20A187D3B43796EC72C955 /* HTAdSDKManager.h in Headers */,
+				86BEC87B3F65642A50ADA414F1E7D4ED /* HTBannerAd.h in Headers */,
+				0C91D6A2CCB190589A635B785404E9B4 /* HTBannerAdView.h in Headers */,
+				69AE067BF5DFEDF0D4DC7DE8FDCBF865 /* HTRewardVideoAdItem.h in Headers */,
+				4FFF34B9CF51D3C1855E4BF3F1A5FC33 /* HTRewardVideoAdManager.h in Headers */,
+				4FE34C635073FA616BDBF01C3C6430C1 /* HTSplashAd.h in Headers */,
+				82B3DDCC93A0EB2CE4BF48B50A8F7B5D /* HTUMManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -740,24 +677,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F7DF10506EE5F26FE7E52C6CC73F74F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17BB8CC9710F147EB528A0117FCA5B91 /* Pods-HTAdSDK_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		5A92EE3314CD77829B96E477FD90E75D /* HTAdSDK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F8811B6EF46F9A6DC6AF8ACBD702C7A /* Build configuration list for PBXNativeTarget "HTAdSDK" */;
+			buildConfigurationList = 204F300FCE05F4B6209FF66593865539 /* Build configuration list for PBXNativeTarget "HTAdSDK" */;
 			buildPhases = (
-				54B3EBA664B5C33E24AF1CC406036BDB /* Headers */,
-				42CB04E892645DA25A5F0C811A531565 /* Sources */,
-				4C6717FA7ECFE9B10C1E59652F41BBE1 /* Frameworks */,
-				C8471189FFEAEB1CE0907FEBD1843B35 /* Resources */,
+				45D3CB5E9B2536D742BCC5AD9E68109A /* Headers */,
+				60DEF5CD621CCCC0C47D11048FD1D0FE /* Sources */,
+				902CD2931251653CAE82C46749676ED5 /* Frameworks */,
+				79DA18ADB37293DE0B14F88C76909CD0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CF3AB18793581B0634C1FEF0522EE780 /* PBXTargetDependency */,
-				435E69EA13CAB6A8796ED4CB5F49A9A4 /* PBXTargetDependency */,
-				C590DF80D8B874532E4F5719F5628472 /* PBXTargetDependency */,
+				200A5AD1A75F16CE5BB3CD40DFA65ED0 /* PBXTargetDependency */,
+				4D40515D18F9B349A183D1D81AB7833E /* PBXTargetDependency */,
 			);
 			name = HTAdSDK;
 			productName = HTAdSDK;
@@ -766,20 +710,19 @@
 		};
 		60CA2E5747594C8A9EEE300DF86AE34A /* Pods-HTAdSDK_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5688B21976ED9818B513890F3F5BD363 /* Build configuration list for PBXNativeTarget "Pods-HTAdSDK_Example" */;
+			buildConfigurationList = F32829F8ACEEF0BE055EECB0E7B3BD0F /* Build configuration list for PBXNativeTarget "Pods-HTAdSDK_Example" */;
 			buildPhases = (
-				29141F1B31BC06DB5B209577045AD767 /* Headers */,
-				960988A56FB9FA5081AD9E138B36CFE0 /* Sources */,
-				18A01A0520A9E25A6AFA343325306747 /* Frameworks */,
-				A50C0F14F953E5267AA0133DE6FDE933 /* Resources */,
+				F7DF10506EE5F26FE7E52C6CC73F74F0 /* Headers */,
+				A573447ABE0D57D1023EFD786385F972 /* Sources */,
+				6FB34DF63A44FDEDD02AC0E7294887C2 /* Frameworks */,
+				2949AE2E7B1BB1AB16B1FA5E7CAB3D99 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1AD9B72F4E8D7C911294E677AB26C671 /* PBXTargetDependency */,
-				90843C7E0BAA81CDC0F3CAC6203B56CA /* PBXTargetDependency */,
-				7F874610C9DA3BAA7096D05171146E57 /* PBXTargetDependency */,
-				660C1F573A482837325C317D8431F708 /* PBXTargetDependency */,
+				EA52F9D9E7516280CAF03C35B456C542 /* PBXTargetDependency */,
+				54DC36F495DAF1EEE86EB1926557560E /* PBXTargetDependency */,
+				9CA9AF98EA378894E3E9AB9B3A562ADE /* PBXTargetDependency */,
 			);
 			name = "Pods-HTAdSDK_Example";
 			productName = "Pods-HTAdSDK_Example";
@@ -832,24 +775,23 @@
 				5A92EE3314CD77829B96E477FD90E75D /* HTAdSDK */,
 				60CA2E5747594C8A9EEE300DF86AE34A /* Pods-HTAdSDK_Example */,
 				6603E48D004D6F3E67D264A19D834D45 /* Pods-HTAdSDK_Tests */,
-				6F6B630FA5213AB083E7CEF1F986FE44 /* UMCCommon */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A50C0F14F953E5267AA0133DE6FDE933 /* Resources */ = {
+		2949AE2E7B1BB1AB16B1FA5E7CAB3D99 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8471189FFEAEB1CE0907FEBD1843B35 /* Resources */ = {
+		79DA18ADB37293DE0B14F88C76909CD0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E4FBD60A014067CA12E8C4E5929248B /* baidumobadsdk.bundle in Resources */,
+				0DEA8615066BB23BA1421B2673C2E2DF /* baidumobadsdk.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -863,26 +805,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		42CB04E892645DA25A5F0C811A531565 /* Sources */ = {
+		60DEF5CD621CCCC0C47D11048FD1D0FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FED817B54A4CE88F6090BAF46104FBA3 /* HTAdSDK-dummy.m in Sources */,
-				7D0509CAF73C3042CB92B9B7442AAE45 /* HTAdSDKManager.m in Sources */,
-				BD712B9C110DCB06DD314013039BED73 /* HTBannerAd.m in Sources */,
-				EB693F083E143200A8260721DE5C2CF2 /* HTBannerAdView.m in Sources */,
-				98125C521E50B359FE1339E54C708EB5 /* HTRewardVideoAdItem.m in Sources */,
-				2E30CFD8E9EC8D7BB56B66EF256F6851 /* HTRewardVideoAdManager.m in Sources */,
-				E9B29DE0F15889AD11F626B1441C7075 /* HTSplashAd.m in Sources */,
-				EC10D60946D408713EF01CE1534141C1 /* HTUMManager.m in Sources */,
+				B340B77E336313614E23C145AAF335F5 /* HTAdSDK-dummy.m in Sources */,
+				A040FE71A545942E1E40572D59295881 /* HTAdSDKManager.m in Sources */,
+				D3C7CF38F33D7A07A52F6CBDA1164422 /* HTBannerAd.m in Sources */,
+				53B3351336C1BD668D1914B92327FFC8 /* HTBannerAdView.m in Sources */,
+				5F686784FF33244694247F37273368B2 /* HTRewardVideoAdItem.m in Sources */,
+				3EBA6B023D2AE7842A04CBF80129A52E /* HTRewardVideoAdManager.m in Sources */,
+				AF27AB917ECA0DCA24CD81BB01D211B1 /* HTSplashAd.m in Sources */,
+				5F04E1FC300E725ABC9A56E0988D1435 /* HTUMManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		960988A56FB9FA5081AD9E138B36CFE0 /* Sources */ = {
+		A573447ABE0D57D1023EFD786385F972 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14E9F7393AA16B0FA5A8CAB11A2631C8 /* Pods-HTAdSDK_Example-dummy.m in Sources */,
+				0FBAB714D4C4344BD515E241D1702DF3 /* Pods-HTAdSDK_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -897,47 +839,35 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1AD9B72F4E8D7C911294E677AB26C671 /* PBXTargetDependency */ = {
+		200A5AD1A75F16CE5BB3CD40DFA65ED0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Bytedance-UnionAD";
 			target = 33E446FE13F6C3D06F866D1D9AA26708 /* Bytedance-UnionAD */;
-			targetProxy = FB6B4515A1EC5F7D68A771FDE1063E05 /* PBXContainerItemProxy */;
+			targetProxy = 197833AFF482B3378A14C3594B3CD673 /* PBXContainerItemProxy */;
 		};
-		435E69EA13CAB6A8796ED4CB5F49A9A4 /* PBXTargetDependency */ = {
+		4D40515D18F9B349A183D1D81AB7833E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GDTMobSDK;
 			target = 6F2BDBDBBAD8487EF4614E1D729C5DD0 /* GDTMobSDK */;
-			targetProxy = 393231F2DF6EBBB2CD8DC0581AA6715B /* PBXContainerItemProxy */;
+			targetProxy = 466DCC405D9B540F811A87AE97F563B1 /* PBXContainerItemProxy */;
 		};
-		660C1F573A482837325C317D8431F708 /* PBXTargetDependency */ = {
+		54DC36F495DAF1EEE86EB1926557560E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = UMCCommon;
-			target = 6F6B630FA5213AB083E7CEF1F986FE44 /* UMCCommon */;
-			targetProxy = 698BBBB6318D459EBD186A9A85ACE904 /* PBXContainerItemProxy */;
+			name = GDTMobSDK;
+			target = 6F2BDBDBBAD8487EF4614E1D729C5DD0 /* GDTMobSDK */;
+			targetProxy = 7D2D8FAB70BE614F8B2DC8BAA8901788 /* PBXContainerItemProxy */;
 		};
-		7F874610C9DA3BAA7096D05171146E57 /* PBXTargetDependency */ = {
+		9CA9AF98EA378894E3E9AB9B3A562ADE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HTAdSDK;
 			target = 5A92EE3314CD77829B96E477FD90E75D /* HTAdSDK */;
-			targetProxy = BDC25F15044E6480C82E8EABC00AF139 /* PBXContainerItemProxy */;
+			targetProxy = 1D19F63DF55AF88FC1E22D6FA17C4031 /* PBXContainerItemProxy */;
 		};
-		90843C7E0BAA81CDC0F3CAC6203B56CA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = GDTMobSDK;
-			target = 6F2BDBDBBAD8487EF4614E1D729C5DD0 /* GDTMobSDK */;
-			targetProxy = 9813FF2F018DC6461A436C6EE5A50661 /* PBXContainerItemProxy */;
-		};
-		C590DF80D8B874532E4F5719F5628472 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = UMCCommon;
-			target = 6F6B630FA5213AB083E7CEF1F986FE44 /* UMCCommon */;
-			targetProxy = 0EC3B3D7B66FB2C0E9D85FABDE0A3EF9 /* PBXContainerItemProxy */;
-		};
-		CF3AB18793581B0634C1FEF0522EE780 /* PBXTargetDependency */ = {
+		EA52F9D9E7516280CAF03C35B456C542 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Bytedance-UnionAD";
 			target = 33E446FE13F6C3D06F866D1D9AA26708 /* Bytedance-UnionAD */;
-			targetProxy = 7B560721573833BCF99DECB1CE39F012 /* PBXContainerItemProxy */;
+			targetProxy = 0E87FFBCFFE29203CE089B615EB51539 /* PBXContainerItemProxy */;
 		};
 		F454FAAFC776A16B6B04DE6A80ECB671 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -950,7 +880,7 @@
 /* Begin XCBuildConfiguration section */
 		04B589884E7E947DAC5B703A1D20F44B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40A774FBA4F2856265C5223C10872F2F /* GDTMobSDK.release.xcconfig */;
+			baseConfigurationReference = 2EFA765561CA2ECEC1AF2B4682EDB252 /* GDTMobSDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -959,6 +889,40 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17DBD0BFC0CBBD9E7A7FF4D04B315417 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B804E18AF641EB81A314B919271682DD /* HTAdSDK.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HTAdSDK/HTAdSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HTAdSDK/HTAdSDK-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/HTAdSDK/HTAdSDK.modulemap";
+				PRODUCT_MODULE_NAME = HTAdSDK;
+				PRODUCT_NAME = HTAdSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -1026,109 +990,6 @@
 			};
 			name = Debug;
 		};
-		39859544D4E235B9B6FC38325D18469D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63BB0AA166E05FD3EBA8AA4414D0B4EF /* Pods-HTAdSDK_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HTAdSDK_Example/Pods-HTAdSDK_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HTAdSDK_Example/Pods-HTAdSDK_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3990C697F140F00D016D8E3280EC96A0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87711F52C6D9B3986DB6E5F4823ECAA3 /* Pods-HTAdSDK_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HTAdSDK_Example/Pods-HTAdSDK_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HTAdSDK_Example/Pods-HTAdSDK_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4058E7B0F1060D67263F145DA4191947 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B804E18AF641EB81A314B919271682DD /* HTAdSDK.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HTAdSDK/HTAdSDK-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HTAdSDK/HTAdSDK-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/HTAdSDK/HTAdSDK.modulemap";
-				PRODUCT_MODULE_NAME = HTAdSDK;
-				PRODUCT_NAME = HTAdSDK;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		478D80BD67DD12432C71CD559F6F398E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FE9BDE63684120A1B383B1F0AC051461 /* Pods-HTAdSDK_Tests.debug.xcconfig */;
@@ -1163,9 +1024,43 @@
 			};
 			name = Debug;
 		};
+		49988B67A0618909179E2E25A389A379 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63BB0AA166E05FD3EBA8AA4414D0B4EF /* Pods-HTAdSDK_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HTAdSDK_Example/Pods-HTAdSDK_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HTAdSDK_Example/Pods-HTAdSDK_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		713A5CDB328A3FEA1D0A758ED2F06EF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F78C0263DFA9E6866D04E8E6E3FD1630 /* Bytedance-UnionAD.debug.xcconfig */;
+			baseConfigurationReference = 9E579C007B3346B5914E92E57A0AD3DA /* Bytedance-UnionAD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1178,7 +1073,7 @@
 		};
 		8035EB83F70FA8DCAB26C6223ED94494 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE68E6FF12822E7470B0F7938D1E8DDB /* Bytedance-UnionAD.release.xcconfig */;
+			baseConfigurationReference = 4DD55DEF73D4DFE1DFFAE77BD24D41CC /* Bytedance-UnionAD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1250,22 +1145,9 @@
 			};
 			name = Release;
 		};
-		C124731EECEF727017E12BB7FEC00593 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 129449FE7B0C4CE8DACAD8A170EBE2F8 /* UMCCommon.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		C128832C4F3211D27E02F4E45E407683 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA6E503E9E144D0343A7B93F22514DEA /* GDTMobSDK.debug.xcconfig */;
+			baseConfigurationReference = 738FF29987D2CCA9728CB2DEC155FE84 /* GDTMobSDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1275,6 +1157,41 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
+		};
+		C3961D4495A2ED4330A16413BBBFA081 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87711F52C6D9B3986DB6E5F4823ECAA3 /* Pods-HTAdSDK_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HTAdSDK_Example/Pods-HTAdSDK_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HTAdSDK_Example/Pods-HTAdSDK_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		D0892AEBA4CDAB4E9FAF88AC441424E6 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1311,21 +1228,7 @@
 			};
 			name = Release;
 		};
-		D6989B4971F6A6D14B29F93971C7982C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FFD342E3569574B8492EF3E744B07E70 /* UMCCommon.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		EB05070C6D0C7270A0FDC1B47390872D /* Debug */ = {
+		EB36207120EC874F2842E0D86B7E784E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C07BB2C2F7646054C838D75EC44849E7 /* HTAdSDK.debug.xcconfig */;
 			buildSettings = {
@@ -1361,15 +1264,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		043D8943E88670B68120DCFA880F4284 /* Build configuration list for PBXAggregateTarget "UMCCommon" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C124731EECEF727017E12BB7FEC00593 /* Debug */,
-				D6989B4971F6A6D14B29F93971C7982C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		0CC2646BAB50FE6D357D1C26F9E234A2 /* Build configuration list for PBXNativeTarget "Pods-HTAdSDK_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1388,6 +1282,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		204F300FCE05F4B6209FF66593865539 /* Build configuration list for PBXNativeTarget "HTAdSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB36207120EC874F2842E0D86B7E784E /* Debug */,
+				17DBD0BFC0CBBD9E7A7FF4D04B315417 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1397,29 +1300,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4F8811B6EF46F9A6DC6AF8ACBD702C7A /* Build configuration list for PBXNativeTarget "HTAdSDK" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EB05070C6D0C7270A0FDC1B47390872D /* Debug */,
-				4058E7B0F1060D67263F145DA4191947 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5688B21976ED9818B513890F3F5BD363 /* Build configuration list for PBXNativeTarget "Pods-HTAdSDK_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				39859544D4E235B9B6FC38325D18469D /* Debug */,
-				3990C697F140F00D016D8E3280EC96A0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		75B8990FE09E47DED6A752D55DCC5561 /* Build configuration list for PBXAggregateTarget "Bytedance-UnionAD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				713A5CDB328A3FEA1D0A758ED2F06EF0 /* Debug */,
 				8035EB83F70FA8DCAB26C6223ED94494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F32829F8ACEEF0BE055EECB0E7B3BD0F /* Build configuration list for PBXNativeTarget "Pods-HTAdSDK_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49988B67A0618909179E2E25A389A379 /* Debug */,
+				C3961D4495A2ED4330A16413BBBFA081 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

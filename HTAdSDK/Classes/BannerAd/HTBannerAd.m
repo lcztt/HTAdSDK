@@ -7,16 +7,16 @@
 
 #import "HTBannerAd.h"
 #import <BUAdSDK/BUAdSDK.h>
-#import "GDTMobBannerView.h"
+#import "GDTUnifiedBannerView.h"
 #import <BaiduMobAdSDK/BaiduMobAdView.h>
 #import <BaiduMobAdSDK/BaiduMobAdDelegateProtocol.h>
 
 
 @interface HTBannerAd () <BUNativeExpressBannerViewDelegate,
-GDTMobBannerViewDelegate, BaiduMobAdViewDelegate>
+GDTUnifiedBannerViewDelegate, BaiduMobAdViewDelegate>
 
 @property (nonatomic, strong) BUNativeExpressBannerView *csjAdView;
-@property (nonatomic, strong) GDTMobBannerView *gdtAdView;
+@property (nonatomic, strong) GDTUnifiedBannerView *gdtAdView;
 @property (nonatomic, strong) BaiduMobAdView *bdAdView;
 
 @end
@@ -34,9 +34,8 @@ GDTMobBannerViewDelegate, BaiduMobAdViewDelegate>
 - (void)loadCSJAd
 {
     self.csjAdView = [[BUNativeExpressBannerView alloc] initWithSlotID:self.gdtSlotId
-                                                     rootViewController:nil
-                                                                 adSize:CGSizeZero
-                                                      IsSupportDeepLink:YES];
+                                                    rootViewController:nil
+                                                                adSize:CGSizeZero];
     self.csjAdView.delegate = self;
     [self.csjAdView loadAdData];
 }
@@ -116,7 +115,7 @@ GDTMobBannerViewDelegate, BaiduMobAdViewDelegate>
 
 - (void)loadGDTAd
 {
-    self.gdtAdView = [[GDTMobBannerView alloc] initWithAppId:self.appId placementId:self.gdtSlotId];
+    self.gdtAdView = [[GDTUnifiedBannerView alloc] initWithPlacementId:self.gdtSlotId viewController:nil];
     self.gdtAdView.delegate = self;
     [self.gdtAdView loadAdAndShow];
 }

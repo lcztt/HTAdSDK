@@ -1,13 +1,11 @@
 PODS:
-  - Bytedance-UnionAD (3.1.0.9)
-  - GDTMobSDK (4.11.10):
-    - GDTMobSDK/GDTMobSDK (= 4.11.10)
-  - GDTMobSDK/GDTMobSDK (4.11.10)
-  - HTAdSDK (0.1.1):
+  - Bytedance-UnionAD (3.3.0.5)
+  - GDTMobSDK (4.11.12):
+    - GDTMobSDK/GDTMobSDK (= 4.11.12)
+  - GDTMobSDK/GDTMobSDK (4.11.12)
+  - HTAdSDK (0.1.2):
     - Bytedance-UnionAD
     - GDTMobSDK
-    - UMCCommon
-  - UMCCommon (7.1.1)
 
 DEPENDENCIES:
   - HTAdSDK (from `../`)
@@ -16,17 +14,15 @@ SPEC REPOS:
   trunk:
     - Bytedance-UnionAD
     - GDTMobSDK
-    - UMCCommon
 
 EXTERNAL SOURCES:
   HTAdSDK:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Bytedance-UnionAD: b841f3266c48da4f1153032589ec95dc1f26e131
-  GDTMobSDK: a1fddadfa32cf4e95d3f70c96677a35c156989f8
-  HTAdSDK: b30577c26540f605a98c4791d724d5adb0d36966
-  UMCCommon: f455f92c125342e360d6ad9eafe484945351eeb5
+  Bytedance-UnionAD: 7fc15b173b44303a548b25ec534e4c1b04263b21
+  GDTMobSDK: 16ef708ffcbbeca455d9df754694bc647401f454
+  HTAdSDK: 13ccf8a09a681f0f5e24700705f7bc1d3d91ae9e
 
 PODFILE CHECKSUM: 2c56fb613c70ef06ea01d9eaef2d3eaf12120689
 

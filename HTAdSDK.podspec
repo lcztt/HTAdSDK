@@ -46,6 +46,6 @@ Pod::Spec.new do |s|
   # 穿山甲
   s.dependency 'Bytedance-UnionAD'
   # 友盟
-  s.dependency 'UMCCommon'
+#  s.dependency 'UMCCommon'
   
 end

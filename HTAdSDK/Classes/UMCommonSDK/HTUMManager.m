@@ -7,13 +7,13 @@
 //
 
 #import "HTUMManager.h"
-#import <UMCommon/UMCommon.h>
+//#import <UMCommon/UMCommon.h>
 
 @implementation HTUMManager
 
 + (void)initUMSDKWithAppKey:(NSString *)key
 {
-    [UMConfigure initWithAppkey:key channel:@"App Store"];
+//    [UMConfigure initWithAppkey:key channel:@"App Store"];
 }
 
 @end
